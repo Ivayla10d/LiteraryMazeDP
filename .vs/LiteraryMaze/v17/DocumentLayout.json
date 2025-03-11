@@ -3,20 +3,120 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\literarymaze.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\literarymaze.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\authors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\publishers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\publishers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\genres\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\publishers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\publishers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\publishers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\publishers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\genres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\genres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\genres\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\genres\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\authors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\authors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\authors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\authors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\genres\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\genres\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\views\\genres\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|solutionrelative:literarymaze\\views\\genres\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D5F955B2-CF01-4623-8EE5-47055C85F049}|LiteraryMaze\\LiteraryMaze.csproj|c:\\users\\admin\\desktop\\\u0434\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0431\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\literarymaze\\literarymaze\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,6 +143,187 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Program.cs",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Program.cs",
+              "RelativeToolTip": "LiteraryMaze\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T23:14:06.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Data\\Book.cs",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Data\\Book.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Data\\Book.cs",
+              "RelativeToolTip": "LiteraryMaze\\Data\\Book.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA2wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T10:52:59.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T11:28:11.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Books\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Books\\Edit.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Books\\Edit.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:54:34.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T09:41:29.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-03T11:28:04.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LiteraryMaze.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\LiteraryMaze.csproj",
+              "RelativeDocumentMoniker": "LiteraryMaze\\LiteraryMaze.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\LiteraryMaze.csproj",
+              "RelativeToolTip": "LiteraryMaze\\LiteraryMaze.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-03T10:03:01.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Data\\User.cs",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Data\\User.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Data\\User.cs",
+              "RelativeToolTip": "LiteraryMaze\\Data\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:02:40.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAACkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-02T08:35:41.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "LiteraryMaze\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAmwJQAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T08:33:35.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationBuilderExtension.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Services\\ApplicationBuilderExtension.cs",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Services\\ApplicationBuilderExtension.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Services\\ApplicationBuilderExtension.cs",
+              "RelativeToolTip": "LiteraryMaze\\Services\\ApplicationBuilderExtension.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T10:04:58.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "LiteraryMaze\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "LiteraryMaze\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-02T08:33:13.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Books\\Create.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Books\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Books\\Create.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Books\\Create.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:54:14.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "LiteraryMaze\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAwwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T10:49:00.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:03:19.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Authors\\Create.cshtml",
               "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Authors\\Create.cshtml",
@@ -50,12 +331,155 @@
               "RelativeToolTip": "LiteraryMaze\\Views\\Authors\\Create.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T23:48:26.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T23:48:26.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Publishers\\Create.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Publishers\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Publishers\\Create.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Publishers\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:01:41.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Create.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Genres\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Create.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Genres\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:00:51.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Publishers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Publishers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Publishers\\Edit.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Publishers\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:00:37.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Publishers\\Index.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Publishers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Publishers\\Index.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Publishers\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwCcAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:00:35.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Authors\\Details.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Authors\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Authors\\Details.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Authors\\Details.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T09:58:34.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Authors\\Index.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Authors\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Authors\\Index.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Authors\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwDAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T23:23:53.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:02:56.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Index.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Genres\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Index.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Genres\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T09:57:10.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T10:03:08.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Delete.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Genres\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Delete.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Genres\\Delete.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T09:58:17.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Details.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Genres\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Details.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Genres\\Details.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T09:58:12.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Edit.cshtml",
+              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Genres\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Genres\\Edit.cshtml",
+              "RelativeToolTip": "LiteraryMaze\\Views\\Genres\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-01T09:57:49.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Authors\\Edit.cshtml",
               "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Authors\\Edit.cshtml",
@@ -63,38 +487,11 @@
               "RelativeToolTip": "LiteraryMaze\\Views\\Authors\\Edit.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T23:47:56.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T23:47:56.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Authors\\Index.cshtml",
-              "RelativeDocumentMoniker": "LiteraryMaze\\Views\\Authors\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Views\\Authors\\Index.cshtml",
-              "RelativeToolTip": "LiteraryMaze\\Views\\Authors\\Index.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAcwCwAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T23:23:53.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Program.cs",
-              "RelativeDocumentMoniker": "LiteraryMaze\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Program.cs",
-              "RelativeToolTip": "LiteraryMaze\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T23:14:06.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 29,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "LiteraryMaze\\Controllers\\CategoriesController.cs",
@@ -102,12 +499,11 @@
               "RelativeToolTip": "LiteraryMaze\\Controllers\\CategoriesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T23:13:57.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T23:13:57.834Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 30,
               "Title": "PublishersController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Controllers\\PublishersController.cs",
               "RelativeDocumentMoniker": "LiteraryMaze\\Controllers\\PublishersController.cs",
@@ -115,12 +511,11 @@
               "RelativeToolTip": "LiteraryMaze\\Controllers\\PublishersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T23:12:00.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T23:12:00.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 31,
               "Title": "GenresController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0414\u0438\u043F\u043B\u043E\u043C\u0435\u043D \u0411\u0435\u043B\u0435\u0437\u0438\u0440\u0435\u0432\u0430\\LiteraryMaze\\LiteraryMaze\\Controllers\\GenresController.cs",
               "RelativeDocumentMoniker": "LiteraryMaze\\Controllers\\GenresController.cs",
@@ -128,8 +523,7 @@
               "RelativeToolTip": "LiteraryMaze\\Controllers\\GenresController.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T23:08:05.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-28T23:08:05.974Z"
             }
           ]
         }

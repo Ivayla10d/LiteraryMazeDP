@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LiteraryMaze")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c27db8cfc3ee2929c1f3ef46252d4697ddb4ec80")]
 [assembly: System.Reflection.AssemblyProductAttribute("LiteraryMaze")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LiteraryMaze")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
