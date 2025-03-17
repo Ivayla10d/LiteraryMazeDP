@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LiteraryMaze.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LiteraryMaze.Controllers
 {
@@ -22,6 +23,7 @@ namespace LiteraryMaze.Controllers
         }
 
         // GET: Orders
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             if (User.IsInRole("Admin"))
@@ -30,25 +32,23 @@ namespace LiteraryMaze.Controllers
                                .Include(o => o.Books)
                                .Include(o => o.Users);
                 return View(await applicationDbContext.ToListAsync());
-
             }
             else
             {
                 var applicationDbContext = _context.Orders
-                              .Include(o => o.Users)
-                              .Include(o => o.Books)
-                              .Where(x => x.UserId == _userManager.GetUserId(User));
-                              
+                               .Include(o => o.Books)
+                               .Include(o => o.Users)
+                               .Where(x=>x.UserId==_userManager.GetUserId(User));
                 return View(await applicationDbContext.ToListAsync());
-
             }
-
+            
+           
         }
 
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Orders == null)
             {
                 return NotFound();
             }
@@ -72,33 +72,31 @@ namespace LiteraryMaze.Controllers
             return View();
         }
 
+        public async Task<IActionResult> CreateWithBookId(int bookId)
+        {
+
+            Order order = new Order();
+            order.BookId = bookId;
+            order.UserId = _userManager.GetUserId(User);
+            order.Quantity = 1;
+            order.Description = "kjhgfds";
+            order.DateRegister = DateTime.Now;
+            _context.Orders.Add(order);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
         // POST: Orders/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-
-        [HttpPost]
-        public async Task<IActionResult> CreateWithBookId(int productId, int countP)
+        public async Task<IActionResult> Create([Bind("UserId,BookId,Quantity,Description,DateRegister")] Order order)
         {
-            //int c = int.Parse( ViewBag.counter);
-            //return View();
-            Order order = new Order();
-            order.BookId = productId;
-            order.Quantity = countP;
-            order.UserId = _userManager.GetUserId(User);
-            _context.Orders.Add(order);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        public async Task<IActionResult> Create([Bind("Id,UserId,BookId,Quantity,Description,DateRegister")] Order order)
-        {
-            order.DateRegister = DateTime.Now;
-            order.UserId = _userManager.GetUserId(User);
             if (ModelState.IsValid)
             {
-                _context.Add(order);
+                order.DateRegister = DateTime.Now;
+                order.UserId = _userManager.GetUserId(User);
+                _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -120,6 +118,7 @@ namespace LiteraryMaze.Controllers
                 return NotFound();
             }
             ViewData["BookId"] = new SelectList(_context.Books, "Id", "Name", order.BookId);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
             return View(order);
         }
 
@@ -139,8 +138,6 @@ namespace LiteraryMaze.Controllers
             {
                 try
                 {
-                    order.UserId = _userManager.GetUserId(User);
-                    order.DateRegister = DateTime.Now;
                     _context.Update(order);
                     await _context.SaveChangesAsync();
                 }
@@ -157,8 +154,8 @@ namespace LiteraryMaze.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BookId"] = new SelectList(_context.Books, "Id", "Id", order.BookId);
-     
+            ViewData["BookId"] = new SelectList(_context.Books, "Id", "Name", order.BookId);
+            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Name", order.UserId);
             return View(order);
         }
 

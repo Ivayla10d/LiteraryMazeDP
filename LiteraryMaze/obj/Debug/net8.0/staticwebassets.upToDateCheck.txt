@@ -58,3 +58,8 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\Photos\logo-last.png
+wwwroot\Photos\new-icon.png
+wwwroot\Photos\stopWatch1.png
+wwwroot\Photos\user.png
+wwwroot\Photos\userCard.png

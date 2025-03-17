@@ -2,15 +2,82 @@
 @model LoginModel
 
 @{
-    ViewData["Title"] = "Log in";
+    ViewData["Title"] = "Влезте в профила си";
 }
+<style>
+    #accountLogIn{
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        width: 150%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1;
+    }
 
+    #login-submit{
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #626161;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #bigLine{
+        height: 4px;
+        width: 20%;
+        background-color: black;
+        margin-left: 0;
+    }
+
+    #registerLink{
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1;
+        position: relative;
+        margin-left: 40%;
+        margin-right: 5%;
+    }
+
+    #registerGrey{
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background-color: #626161;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+</style>
 <h1>@ViewData["Title"]</h1>
+<hr id="bigLine" />
+<br />
 <div class="row">
     <div class="col-md-4">
         <section>
-            <form id="account" method="post">
-                <h2>Use a local account to log in.</h2>
+            <form id="accountLogIn" method="post">
+				<h3> Регистриран потребител</h3>
+                <p>Ако имате профил, използвайте потребителското име и паролата си за да влезете.</p>
                 <hr />
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                 <div class="form-floating mb-3">
@@ -30,50 +97,28 @@
                     </label>
                 </div>
                 <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Вход</button>
                 </div>
                 <div>
                     <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                        <a id="forgot-password" asp-page="./ForgotPassword" style="text-decoration:none; color:darkgrey">Забравена парола?</a>
                     </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                    </p>
-                    <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
-                    </p>
+
                 </div>
             </form>
         </section>
     </div>
     <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h3>Use another service to log in.</h3>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
-                            about setting up this ASP.NET application to support logging in via external services</a>.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins!)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
-                        </div>
-                    </form>
-                }
-            }
+        <section id="registerLink">
+            <h3> Нови клиенти </h3>
+            <p>
+                Регистрацията Ви дава няколко предимства: по-бърза поръчка,
+                <br />
+                запазване на повече от един адрес, проследяване на поръчки и др.
+            </p>
+            <div>
+               <a asp-page="/Account/Register" id="registerGrey" >Регистрирай се</a>
+            </div>
         </section>
     </div>
 </div>

@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\LiteraryMaze.q0rpx088zi.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\logo-last.png",
+      "PackagePath": "staticwebassets\\Photos\\logo-last.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\new-icon.png",
+      "PackagePath": "staticwebassets\\Photos\\new-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\stopWatch1.png",
+      "PackagePath": "staticwebassets\\Photos\\stopWatch1.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\user.png",
+      "PackagePath": "staticwebassets\\Photos\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\userCard.png",
+      "PackagePath": "staticwebassets\\Photos\\userCard.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
