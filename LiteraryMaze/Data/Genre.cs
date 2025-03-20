@@ -7,7 +7,5 @@
         public string ImageURL { get; set; }
         public DateTime DateRegister { get; set; } = DateTime.Now;
         public ICollection<Book> Books { get; set; }
-       
-
     }
 }

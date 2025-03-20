@@ -1,5 +1,8 @@
+wwwroot\css\index.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\HTML\contacts.html
+wwwroot\HTML\map.html
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
@@ -58,6 +61,10 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\Photos\cart.png
+wwwroot\Photos\contacts.png
+wwwroot\Photos\favorites.png
+wwwroot\Photos\location.png
 wwwroot\Photos\logo-last.png
 wwwroot\Photos\new-icon.png
 wwwroot\Photos\stopWatch1.png
