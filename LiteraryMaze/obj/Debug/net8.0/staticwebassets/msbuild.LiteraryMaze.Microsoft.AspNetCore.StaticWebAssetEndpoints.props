@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/LiteraryMaze/css/index.8egle95pcr.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\index.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8egle95pcr"},{"Name":"integrity","Value":"sha256-QGjtMFLRMfh0sD/2N31lQ42ZKePMAiIINIKJJ2NXU14="},{"Name":"label","Value":"_content/LiteraryMaze/css/index.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25986"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QGjtMFLRMfh0sD/2N31lQ42ZKePMAiIINIKJJ2NXU14=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Mar 2025 11:21:13 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LiteraryMaze/css/index.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\index.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-QGjtMFLRMfh0sD/2N31lQ42ZKePMAiIINIKJJ2NXU14="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"25986"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022QGjtMFLRMfh0sD/2N31lQ42ZKePMAiIINIKJJ2NXU14=\u0022"},{"Name":"Last-Modified","Value":"Thu, 20 Mar 2025 11:21:13 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9T/hqHo5LxujsuXBjVGjVEz623I\u002B\u002Bs8xuusQ8fMSzxo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"26212"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229T/hqHo5LxujsuXBjVGjVEz623I\u002B\u002Bs8xuusQ8fMSzxo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Mar 2025 09:13:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LiteraryMaze/css/index.fvun0xa82h.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\index.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fvun0xa82h"},{"Name":"integrity","Value":"sha256-9T/hqHo5LxujsuXBjVGjVEz623I\u002B\u002Bs8xuusQ8fMSzxo="},{"Name":"label","Value":"_content/LiteraryMaze/css/index.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"26212"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229T/hqHo5LxujsuXBjVGjVEz623I\u002B\u002Bs8xuusQ8fMSzxo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 21 Mar 2025 09:13:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LiteraryMaze/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

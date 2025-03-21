@@ -5,73 +5,75 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>@ViewData["Title"] - LiteraryMaze</title>
-		<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/LiteraryMaze.styles.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
 </head>
 <body>
-	<header>
-		<div class="nav-conteiner">
-			<div class="conteiner">
-				<div class="logo-surch-nav">
-					<div class="logo-search">
-						<div class="logo">
-							@* <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/Photos/logo-last.png" /></a> *@
-						</div>
-						<div class="search-bar">
-							<input type="text" placeholder="Търсене..." class="search-input">
-						</div>
+
+	<div class="nav-conteiner">
+		<div class="conteiner">
+			<div class="logo-surch-nav">
+				<div class="logo-search">
+					<div class="logo">
+						<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/Photos/logo-last.png" width="100" /></a>
+					</div>
+					<div class="search-bar">
+						<input type="text" placeholder="Търсене..." class="search-input">
 					</div>
 				</div>
-@* 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+					<div class="nav-icon-conteiner">
+
+						<nav class="nav-icons">
+							<a class="nav-link text-dark" asp-area="~/HTML/contacts.html"><img src="~/Photos/contacts.png" width="40" /></a>
+							<a class="nav-link text-dark" asp-area="" asp-controller="Favorites" asp-action="Index"><img src="~/Photos/favorites.png" width="40" /></a>
+							<partial name="_LoginPartial" />
+							<a class="nav-link text-dark" asp-area="" asp-controller="Carts" asp-action="Index"><img src="~/Photos/cart.png" width="40" /></a>
+						</nav>
+					</div>
+			</div>
+			@* 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button> *@
-				<div>
-					<nav class="main-nav">
-						<ul>
-							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Каталог</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Genres" asp-action="Index">Жанрове</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Publishers" asp-action="Index">Издателства</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Authors" asp-action="Index">Автори</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Книги</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Promotions" asp-action="Index">Промоции</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="Index">Поръчки</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
 
-			<div>
-
-				<nav class="nav-icons">
-					<a class="nav-link text-dark" asp-area="~/HTML/contacts.html"><img src="~/Photos/contacts.png" width="40" /></a> @* /////////da opravq wryzkata////// *@
-					<a class="nav-link text-dark" asp-area="" asp-controller="Favorites" asp-action="Index"><img src="~/Photos/favorites.png" width="40" /></a>
-					<partial name="_LoginPartial" />
-					<a class="nav-link text-dark" asp-area="" asp-controller="Carts" asp-action="Index"><img src="~/Photos/cart.png" width="40" /></a>
-				</nav>
-			</div>
 		</div>
+		<div class="twoNavs">
+			<nav class="main-nav">
+				<ul>
+					<li>
+						<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Начало</a>
+					</li>
+					<li>
+						<a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index">Каталог</a>
+					</li>
+					<li>
+						<a class="nav-link text-dark" asp-area="" asp-controller="Genres" asp-action="Index">Жанрове</a>
+					</li>
+					<li>
+						<a class="nav-link text-dark" asp-area="" asp-controller="Publishers" asp-action="Index">Издателства</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" asp-area="" asp-controller="Authors" asp-action="Index">Автори</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Index">Книги</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" asp-area="" asp-controller="Promotions" asp-action="Index">Промоции</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark" asp-area="" asp-controller="Orders" asp-action="Index">Поръчки</a>
+					</li>
+				</ul>
+			</nav>
 
-	</header>
+		
+		</div>
+	</div>
+
+
 	<div class="container">
 		<main role="main" class="pb-3">
 			@RenderBody()

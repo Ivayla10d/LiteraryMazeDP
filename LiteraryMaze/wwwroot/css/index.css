@@ -16,6 +16,8 @@
 .logo-search-nav {
     width: 100%;
     max-width: 1200px;
+    display: flex;
+    justify-content: space-between
 }
 
 .logo-search {
@@ -30,7 +32,14 @@
     display: flex;
     justify-content: flex-start;
 }
-
+.twoNavs {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-icon-conteiner {
+    display: flex;
+    align-content: flex-end;
+}
 #logo img {
     width: 100px;
 }
@@ -71,6 +80,7 @@
     padding: 10px 0;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Леко сенчесто подчертаване */
+    margin-bottom: 2%;
 }
 
     /* Навигационен списък */
