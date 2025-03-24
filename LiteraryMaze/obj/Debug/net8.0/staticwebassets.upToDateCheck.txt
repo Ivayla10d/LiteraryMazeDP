@@ -64,6 +64,11 @@ wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
 wwwroot\Photos\cart.png
 wwwroot\Photos\contacts.png
 wwwroot\Photos\favorites.png
+wwwroot\Photos\galery1.jpg
+wwwroot\Photos\galery2.jpg
+wwwroot\Photos\galery3.jpg
+wwwroot\Photos\galery4.jpg
+wwwroot\Photos\galery5.jpg
 wwwroot\Photos\location.png
 wwwroot\Photos\logo-last.png
 wwwroot\Photos\new-icon.png

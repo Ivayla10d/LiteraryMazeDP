@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mc4Q0dTU86OOARXVL9nudEa75+1LTQ751pu2cgd/5e4=",
+  "Hash": "Zu4r/LTWEN+rDpkJ4SmvkH67SAlGKCepW/3FmyPc8Rw=",
   "Source": "LiteraryMaze",
   "BasePath": "_content/LiteraryMaze",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fvun0xa82h",
-      "Integrity": "9T/hqHo5LxujsuXBjVGjVEz623I++s8xuusQ8fMSzxo=",
+      "Fingerprint": "pd69fo7tlq",
+      "Integrity": "jQfKxcYp/ol+ymqZc/Ca/0/Dx6ntuxhIXZpYTp+SAlM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\index.css"
@@ -2705,6 +2705,111 @@
       "OriginalItemSpec": "wwwroot\\Photos\\favorites.png"
     },
     {
+      "Identity": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery1.jpg",
+      "SourceId": "LiteraryMaze",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\",
+      "BasePath": "_content/LiteraryMaze",
+      "RelativePath": "Photos/galery1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m3zs16xhly",
+      "Integrity": "smle7vuZDPVOUvRNbk5HCuLMowr6d98PLehNvCm6WmI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\galery1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery2.jpg",
+      "SourceId": "LiteraryMaze",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\",
+      "BasePath": "_content/LiteraryMaze",
+      "RelativePath": "Photos/galery2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s5y33twrhv",
+      "Integrity": "UPmrcPvxfkmJMtHf+jgeL9+bDgvub49KiUayFohNgcs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\galery2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery3.jpg",
+      "SourceId": "LiteraryMaze",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\",
+      "BasePath": "_content/LiteraryMaze",
+      "RelativePath": "Photos/galery3#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w1i118456m",
+      "Integrity": "XK3evBxjP1TujCyf7Nr9KP/xPRiGgnGrB2B/ri7rSgA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\galery3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery4.jpg",
+      "SourceId": "LiteraryMaze",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\",
+      "BasePath": "_content/LiteraryMaze",
+      "RelativePath": "Photos/galery4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2niqwx98wo",
+      "Integrity": "IksQ5TIAWKnHgfMaiiD3CV3678wICucBkNSdweM8CvU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\galery4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery5.jpg",
+      "SourceId": "LiteraryMaze",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\",
+      "BasePath": "_content/LiteraryMaze",
+      "RelativePath": "Photos/galery5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jmbziep6rm",
+      "Integrity": "m3+8aJCNVhlvxi4jUtjDd1N+4vwAfbMUVvq5XTllCDs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Photos\\galery5.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\location.png",
       "SourceId": "LiteraryMaze",
       "SourceType": "Discovered",
@@ -2843,7 +2948,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26212"
+          "Value": "24237"
         },
         {
           "Name": "Content-Type",
@@ -2851,11 +2956,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9T/hqHo5LxujsuXBjVGjVEz623I++s8xuusQ8fMSzxo=\""
+          "Value": "\"jQfKxcYp/ol+ymqZc/Ca/0/Dx6ntuxhIXZpYTp+SAlM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 09:13:16 GMT"
+          "Value": "Mon, 24 Mar 2025 11:49:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2865,12 +2970,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9T/hqHo5LxujsuXBjVGjVEz623I++s8xuusQ8fMSzxo="
+          "Value": "sha256-jQfKxcYp/ol+ymqZc/Ca/0/Dx6ntuxhIXZpYTp+SAlM="
         }
       ]
     },
     {
-      "Route": "css/index.fvun0xa82h.css",
+      "Route": "css/index.pd69fo7tlq.css",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\css\\index.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2880,7 +2985,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26212"
+          "Value": "24237"
         },
         {
           "Name": "Content-Type",
@@ -2888,11 +2993,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9T/hqHo5LxujsuXBjVGjVEz623I++s8xuusQ8fMSzxo=\""
+          "Value": "\"jQfKxcYp/ol+ymqZc/Ca/0/Dx6ntuxhIXZpYTp+SAlM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 09:13:16 GMT"
+          "Value": "Mon, 24 Mar 2025 11:49:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2902,7 +3007,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fvun0xa82h"
+          "Value": "pd69fo7tlq"
         },
         {
           "Name": "label",
@@ -2910,7 +3015,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9T/hqHo5LxujsuXBjVGjVEz623I++s8xuusQ8fMSzxo="
+          "Value": "sha256-jQfKxcYp/ol+ymqZc/Ca/0/Dx6ntuxhIXZpYTp+SAlM="
         }
       ]
     },
@@ -10625,6 +10730,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-MAcE7bSqPXk46hEXwOYkyvz70Ey468ltUZVo74s+hBY="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery1.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "401508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"smle7vuZDPVOUvRNbk5HCuLMowr6d98PLehNvCm6WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:24:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-smle7vuZDPVOUvRNbk5HCuLMowr6d98PLehNvCm6WmI="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery1.m3zs16xhly.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "401508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"smle7vuZDPVOUvRNbk5HCuLMowr6d98PLehNvCm6WmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:24:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m3zs16xhly"
+        },
+        {
+          "Name": "label",
+          "Value": "Photos/galery1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-smle7vuZDPVOUvRNbk5HCuLMowr6d98PLehNvCm6WmI="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery2.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "250226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UPmrcPvxfkmJMtHf+jgeL9+bDgvub49KiUayFohNgcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:25:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UPmrcPvxfkmJMtHf+jgeL9+bDgvub49KiUayFohNgcs="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery2.s5y33twrhv.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "250226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UPmrcPvxfkmJMtHf+jgeL9+bDgvub49KiUayFohNgcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:25:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s5y33twrhv"
+        },
+        {
+          "Name": "label",
+          "Value": "Photos/galery2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UPmrcPvxfkmJMtHf+jgeL9+bDgvub49KiUayFohNgcs="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery3.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "470342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XK3evBxjP1TujCyf7Nr9KP/xPRiGgnGrB2B/ri7rSgA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:34:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XK3evBxjP1TujCyf7Nr9KP/xPRiGgnGrB2B/ri7rSgA="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery3.w1i118456m.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery3.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "470342"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XK3evBxjP1TujCyf7Nr9KP/xPRiGgnGrB2B/ri7rSgA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:34:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w1i118456m"
+        },
+        {
+          "Name": "label",
+          "Value": "Photos/galery3.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XK3evBxjP1TujCyf7Nr9KP/xPRiGgnGrB2B/ri7rSgA="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery4.2niqwx98wo.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "403386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IksQ5TIAWKnHgfMaiiD3CV3678wICucBkNSdweM8CvU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:35:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2niqwx98wo"
+        },
+        {
+          "Name": "label",
+          "Value": "Photos/galery4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IksQ5TIAWKnHgfMaiiD3CV3678wICucBkNSdweM8CvU="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery4.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "403386"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IksQ5TIAWKnHgfMaiiD3CV3678wICucBkNSdweM8CvU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:35:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IksQ5TIAWKnHgfMaiiD3CV3678wICucBkNSdweM8CvU="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery5.jmbziep6rm.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "417286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m3+8aJCNVhlvxi4jUtjDd1N+4vwAfbMUVvq5XTllCDs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:49:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jmbziep6rm"
+        },
+        {
+          "Name": "label",
+          "Value": "Photos/galery5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m3+8aJCNVhlvxi4jUtjDd1N+4vwAfbMUVvq5XTllCDs="
+        }
+      ]
+    },
+    {
+      "Route": "Photos/galery5.jpg",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\galery5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "417286"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m3+8aJCNVhlvxi4jUtjDd1N+4vwAfbMUVvq5XTllCDs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 30 Nov 2024 09:49:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m3+8aJCNVhlvxi4jUtjDd1N+4vwAfbMUVvq5XTllCDs="
         }
       ]
     },

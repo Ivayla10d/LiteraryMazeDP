@@ -23,15 +23,7 @@
 						<input type="text" placeholder="Търсене..." class="search-input">
 					</div>
 				</div>
-					<div class="nav-icon-conteiner">
 
-						<nav class="nav-icons">
-							<a class="nav-link text-dark" asp-area="~/HTML/contacts.html"><img src="~/Photos/contacts.png" width="40" /></a>
-							<a class="nav-link text-dark" asp-area="" asp-controller="Favorites" asp-action="Index"><img src="~/Photos/favorites.png" width="40" /></a>
-							<partial name="_LoginPartial" />
-							<a class="nav-link text-dark" asp-area="" asp-controller="Carts" asp-action="Index"><img src="~/Photos/cart.png" width="40" /></a>
-						</nav>
-					</div>
 			</div>
 			@* 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -68,26 +60,20 @@
 					</li>
 				</ul>
 			</nav>
+			<div>
 
+				<nav class="nav-icons">
+					<a class="nav-link text-dark" asp-area="~/HTML/contacts.html"><img src="~/Photos/contacts.png" width="40" /></a>
+					<a class="nav-link text-dark" asp-area="" asp-controller="Favorites" asp-action="Index"><img src="~/Photos/favorites.png" width="40" /></a>
+					<partial name="_LoginPartial" />
+					<a class="nav-link text-dark" asp-area="" asp-controller="Carts" asp-action="Index"><img src="~/Photos/cart.png" width="40" /></a>
+				</nav>
+			</div>
 		
 		</div>
 	</div>
 
 
-	<div class="container">
-		<main role="main" class="pb-3">
-			@RenderBody()
-		</main>
-	</div>
 
-	<footer class="border-top footer text-muted">
-		<div class="container">
-			&copy; 2025 - LiteraryMaze - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-		</div>
-	</footer>
-	<script src="~/lib/jquery/dist/jquery.min.js"></script>
-	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="~/js/site.js" asp-append-version="true"></script>
-	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
