@@ -984,8 +984,6 @@ header {
         .empty-list button:hover {
             background-color: #d0d0d0; /* По-тъмен нюанс при задържане */
         }
-
-
 header {
     background-color: #dcdcdc; /* Светлосиво */
     color: #444;
@@ -999,13 +997,13 @@ header {
     }
 
 /* Основно съдържание */
-main {
-    flex: 1; /* Запълва наличното пространство */
-    display: flex;
+/*main {
+    flex: 1;*/ /* Запълва наличното пространство */
+    /*display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-}
+}*/
 
 .empty-cart {
     text-align: center;

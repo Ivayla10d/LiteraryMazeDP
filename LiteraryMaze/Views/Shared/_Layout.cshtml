@@ -69,11 +69,24 @@
 					<a class="nav-link text-dark" asp-area="" asp-controller="Carts" asp-action="Index"><img src="~/Photos/cart.png" width="40" /></a>
 				</nav>
 			</div>
-		
 		</div>
 	</div>
 
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
 
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; 2025 - LiteraryMaze - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+		</div>
+	</footer>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
 
 </body>
 </html>
