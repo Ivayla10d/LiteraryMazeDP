@@ -17,7 +17,10 @@ namespace LiteraryMaze.Controllers
         {
             return View();
         }
-
+        public IActionResult Begin()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
