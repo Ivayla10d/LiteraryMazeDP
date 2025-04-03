@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace LiteraryMaze.Controllers
 {
+    [Authorize]
     public class OrdersController : Controller
     {
         private readonly ApplicationDbContext _context;

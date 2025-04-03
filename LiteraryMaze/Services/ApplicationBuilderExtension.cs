@@ -66,8 +66,7 @@ namespace LiteraryMaze.Services
                 if (result.Succeeded)
                 {
                     await userManager.AddToRoleAsync(defaultUser, "Admin");
-                    //await userManager.AddToRoleAsync(defaultUser, Roles.Guest.ToString());
-                    //await userManager.AddToRoleAsync(defaultUser, Roles.User.ToString());                    
+            
                 }
             }
         }

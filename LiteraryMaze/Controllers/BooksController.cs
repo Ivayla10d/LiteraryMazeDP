@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LiteraryMaze.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LiteraryMaze.Controllers
 {
@@ -48,6 +49,7 @@ namespace LiteraryMaze.Controllers
         }
 
         // GET: Books/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewData["AuthorId"] = new SelectList(_context.Authors, "Id", "Name");
@@ -62,7 +64,7 @@ namespace LiteraryMaze.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,CatNumber,Name,AuthorId,PublisherId,CategoryId,GenreId,Plot,ImageURL,Price,Quantity,Year,DateRegister")] Book book)
+        public async Task<IActionResult> Create([Bind("CatNumber,Name,AuthorId,PublisherId,CategoryId,GenreId,Plot,ImageURL,Price,Quantity,Year,DateRegister")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -78,6 +80,7 @@ namespace LiteraryMaze.Controllers
         }
 
         // GET: Books/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
