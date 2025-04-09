@@ -156,7 +156,7 @@
     justify-content: space-evenly; /* Центриране на галерията */
     gap: 15px; /* Разстояние между елементите */
     padding: 20px;
-    margin-bottom: 20%;
+    
 }
 
 /* Всеки елемент от галерията */
@@ -218,23 +218,6 @@
 }
 
 
-
-
-
-.footer1 {
-    background-color: #848484; /* Светло сив фон */
-    
-    margin-top: 5%;
-}
-
-
-
-
-
-
-
-
-
 /*@keyframes slide {
     0% {
         transform: translateX(0);
@@ -271,7 +254,7 @@
 }
 
 .info {
-    margin-top: 30px;
+    
     display: flex;
     justify-content: space-evenly;
 }
@@ -316,7 +299,6 @@
 
 .list-photo {
     margin-top: 30px;
-
     display: flex;
     justify-content: space-evenly;
     flex-wrap:wrap;             
@@ -324,6 +306,7 @@
 
 #imgSpace {
     margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 nav-bar {
@@ -429,9 +412,9 @@ table tr:nth-child(even) {
 }
 
 .medium-darkgrey-line {
-    height: 4px;
+    height: 10px;
     width: 20%;
-    background-color: #272728;
+    background-color: #333;
     margin-left: 0;
 }
 
@@ -597,7 +580,7 @@ table tr:nth-child(even) {
 
 
 /* Footer */
-.footer {
+footer {
     background-color: #8f8f8f; /* Основен цвят */
     color: #fff; /* Цвят на текста */
     padding: 15px 30px; /* Вътрешен отстъп */
@@ -607,6 +590,8 @@ table tr:nth-child(even) {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: #848484; /* Светло сив фон */
+    margin-bottom: 0%;
 }
 
 #allBooks {
@@ -1021,16 +1006,16 @@ header {
     }
 
 /* Фиксирана долна част */
-footer.cart-summary {
-    background-color: #e0e0e0; /* Светлосив фон */
-    color: #333;
+/*footer.cart-summary {
+    background-color: #e0e0e0;*/ /* Светлосив фон */
+    /*color: #333;
     padding: 1rem;
-    border-top: 1px solid #ccc; /* Граница над футъра */
-    position: fixed;
+    border-top: 1px solid #ccc;*/ /* Граница над футъра */
+    /*position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%; /* Фиксирана ширина */
-}
+    width: 100%;*/ /* Фиксирана ширина */
+/*}*/
 
 .summary-details {
     display: flex;
@@ -1117,3 +1102,15 @@ header {
         font-size: 1.1rem;
         color: #555; /* По-светъл сив текст */
     }
+
+#welcome {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgba(132, 132, 132, 0.1); /* Сив фон с 50% прозрачност */
+    padding: 70px;
+}
+#beginPage {
+    text-align: center;
+
+}

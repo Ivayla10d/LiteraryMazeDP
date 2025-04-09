@@ -61,8 +61,11 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\Photos\bestseller.jpg
 wwwroot\Photos\cart.png
+wwwroot\Photos\coins.png
 wwwroot\Photos\contacts.png
+wwwroot\Photos\delivery.png
 wwwroot\Photos\favorites.png
 wwwroot\Photos\galery1.jpg
 wwwroot\Photos\galery2.jpg

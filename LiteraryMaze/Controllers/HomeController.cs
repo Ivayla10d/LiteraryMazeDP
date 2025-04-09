@@ -12,7 +12,10 @@ namespace LiteraryMaze.Controllers
         {
             _logger = logger;
         }
-
+        public IActionResult Contacts()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

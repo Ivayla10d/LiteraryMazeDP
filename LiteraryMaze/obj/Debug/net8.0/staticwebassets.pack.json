@@ -13,12 +13,24 @@
       "PackagePath": "staticwebassets\\HTML\\map.html"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\bestseller.jpg",
+      "PackagePath": "staticwebassets\\Photos\\bestseller.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\cart.png",
       "PackagePath": "staticwebassets\\Photos\\cart.png"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\coins.png",
+      "PackagePath": "staticwebassets\\Photos\\coins.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\contacts.png",
       "PackagePath": "staticwebassets\\Photos\\contacts.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\delivery.png",
+      "PackagePath": "staticwebassets\\Photos\\delivery.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\favorites.png",
