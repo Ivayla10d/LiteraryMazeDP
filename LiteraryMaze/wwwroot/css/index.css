@@ -625,7 +625,7 @@ footer {
 }
 
 .content-scroll {
-    position: relative;
+
     top: 170px;
 }
 
@@ -1059,9 +1059,9 @@ header p {
 }
 
 /* Основно съдържание */
-main {
+/*main {
     padding: 2rem 1rem;
-}
+}*/
 
 .book-list {
     background-color: #ffffff; /* Бял фон */

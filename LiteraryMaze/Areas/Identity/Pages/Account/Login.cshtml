@@ -5,14 +5,19 @@
     ViewData["Title"] = "Влезте в профила си";
 }
 <style>
+    .log-in-page{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
     #accountLogIn{
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 5px;
         padding: 20px;
-        width: 150%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         flex: 1;
+        margin-bottom: 3%;
     }
 
     #login-submit{
@@ -46,9 +51,8 @@
         width: 100%;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         flex: 1;
-        position: relative;
-        margin-left: 40%;
-        margin-right: 5%;
+        margin-left: 5%;
+        margin-right: 20%%;
     }
 
     #registerGrey{
@@ -64,7 +68,7 @@
         text-align: center;
         text-decoration: none;
         transition: background-color 0.3s ease;
-        width: 100%;
+        width:50%;
         box-sizing: border-box;
 
     }
@@ -72,7 +76,7 @@
 <h1>@ViewData["Title"]</h1>
 <hr id="bigLine" />
 <br />
-<div class="row">
+<div class="log-in-page">
     <div>
         <section>
             <form id="accountLogIn" method="post">

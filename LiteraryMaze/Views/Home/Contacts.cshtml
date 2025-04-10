@@ -3,5 +3,43 @@
     ViewData["Title"] = "Contacts";
 }
 
-<h1>Contacts</h1>
+<div class="content-scroll">
+    <h1>Контакти</h1>
+    <hr class="small-darker-line" />
+    <div class="contacts">
+        <div class="info-contact">
+            <p>
+                Добре дошли в онлайн книжарница <strong>Литературен лабиринт</strong>.
+                <br />
+                Тук можете да намерите разнообразие от книги
+                <br />
+                за всички възрасти и интереси.
+            </p>
+            <p>Ако имате въпроси, не се колебайте да се свържете с нас:</p>
+            <ul>
+                <li><strong>Имейл:</strong> infoLM@abv.com</li>
+                <li><strong>Телефон:</strong> +359 88 123 4567</li>
+                <li><strong>Адрес:</strong> гр. Сопот, ул.Иван Вазов</li>
+            </ul>
+        </div>
+        <div class="comment-form">
+            <h2>Добавяне на коментар</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Име:</label>
+                    <input type="text" id="name" name="name" placeholder="Вашето име" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Имейл:</label>
+                    <input type="email" id="email" name="email" placeholder="Вашият имейл" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Коментар:</label>
+                    <textarea id="comment" name="comment" rows="5" placeholder="Вашият коментар" required></textarea>
+                </div>
+                <button type="submit">Изпрати</button>
+            </form>
+        </div>
+    </div>
+    </div>
 
