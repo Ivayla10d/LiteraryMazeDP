@@ -12,6 +12,10 @@ namespace LiteraryMaze.Controllers
         {
             _logger = logger;
         }
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
         public IActionResult Map()
         {
             return View();

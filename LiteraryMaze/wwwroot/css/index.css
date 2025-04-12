@@ -333,7 +333,7 @@ nav-bar {
     }
 
 .book {
-    padding: 10px;
+    padding: 15px;
     width: 20%;
     background-color: #f5f5f5;
     box-shadow: 0px 2px 4px #959292;
@@ -454,11 +454,11 @@ table tr:nth-child(even) {
 }
 
 .book img {
-    transition: transform 0.6s ease;
+    transition: transform 0.2s ease;
 }
 
 .book:hover img {
-    transform: scale(1.1); /* Леко увеличение на снимката */
+    transform: scale(0.9); /* Леко увеличение на снимката */
 }
 
 .dropdown-select {
