@@ -1,90 +1,342 @@
 ﻿@model LiteraryMaze.Data.Book
 
 @{
-    ViewData["Title"] = "Details";
+	ViewData["Title"] = "Details";
 }
+<style>
 
+	.tabs {
+	border: 1px solid #ddd;
+	font-family: sans-serif;
+	max-width: 100%;
+	margin: 50px auto; /* центрира по хоризонтала */
+	}
+
+	.tab-buttons {
+	display: flex;
+	border-bottom: 1px solid #ddd;
+	}
+
+	.tab-btn {
+	flex: 1;
+	padding: 10px;
+	cursor: pointer;
+	background: #fff;
+	border: none;
+	border-right: 1px solid #ddd;
+	font-weight: bold;
+	color: #333;
+	}
+
+	.tab-btn:last-child {
+	border-right: none;
+	}
+
+	.tab-btn.active {
+	background: #cf6ffb;
+	color: white;
+	}
+
+	.tab-content {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	}
+
+	.tab-content.active {
+	display: block;
+	}
+</style>
 <h1>Details</h1>
 
-<div>
-    <h4>Book</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CatNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CatNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Authors)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Authors.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Publishers)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Publishers.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Categories)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Categories.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Genres)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Genres.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Plot)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Plot)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageURL)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImageURL)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Year)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Year)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateRegister)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateRegister)
-        </dd>
-    </dl>
+<div class="content-scroll">
+	<div class=" book-description">
+
+		<div class="picBackround">
+			<img src="@Html.DisplayFor(model => model.ImageURL)" width="350" height="450" />
+		</div>
+		<div class="information">
+			<h2>@Html.DisplayFor(model => model.Name)</h2>
+			<p>
+				Издател: @Html.DisplayNameFor(model => model.Publishers.Name)
+				<br />
+				Автор:@Html.DisplayFor(model => model.Authors.Name)
+			</p>
+			<div class="star-info">
+				<div><img src="~/Photos/starsBuchler.png" width="120" height="100" /></div>
+				<div>
+					<p>
+						<br />
+						5  Мнения | <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacts">Напишете отзив</a>
+					</p>
+
+				</div>
+				<br />
+			</div>
+			<h2>@Html.DisplayFor(model => model.Price) лв.</h2>
+			<br />
+			<ul class="grey-list">
+				<li>Преводач: Милена Ташева;</li>
+				<li>Адаптация на корица: Фиделия Косева.;</li>
+			</ul>
+			<div class="addFav">
+				<div>
+					<h5><i>Добави в любими:</i></h5>
+				</div>
+				<div class="like-button">
+
+					<input type="checkbox" id="like" class="like-checkbox">
+					<label for="like" class="like-label">&#9829;</label> <!-- Unicode символ за сърце -->
+				</div>
+			</div>
+		</div>
+		<div class="book-details">
+			<table>
+				<tr>
+					<td class="label">Автор</td>
+					<td class="value">@Html.DisplayFor(model => model.Authors.Name)</td>
+				</tr>
+				<tr>
+					<td class="label">Издателство</td>
+					<td class="value">@Html.DisplayNameFor(model => model.Publishers.Name)</td>
+				</tr>
+				<tr>
+					<td class="label">ISBN</td>
+					<td class="value">	@Html.DisplayFor(model => model.CatNumber)</td>
+				</tr>
+				<tr>
+					<td class="label">Година на издаване</td>
+					<td class="value">@Html.DisplayFor(model => model.Year)</td>
+				</tr>
+				<tr>
+					<td class="label">Жанр</td>
+					<td class="value">@Html.DisplayFor(model => model.Genres.Name)</td>
+				</tr>
+				<tr>
+					<td class="label">Категория</td>
+					<td class="value">@Html.DisplayFor(model => model.Categories.Name)</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<br />
+<hr class="center-grey-line" />
+<div class="tabs-center">
+	<div class="tabs">
+		<div class="tab-buttons">
+			<button class="tab-btn active" data-tab="description">Пълно описание</button>
+			<button class="tab-btn" data-tab="reviews">Мнения</button>
+			<button class="tab-btn" data-tab="shipping">Цени за доставка</button>
+		</div>
+
+		<div class="tab-content active" id="description">
+			<p>		@Html.DisplayFor(model => model.Plot) </p>
+		</div>
+		<div class="tab-content" id="reviews">
+			<div class="form-wrapper">
+				<form action="#" method="post">
+					<div class="form-fields">
+						<label for="name">Вашето име:</label>
+						<input type="text" id="name" name="name" required>
+
+						<label for="comment" style="margin-top: 15px;">Коментар:</label>
+						<textarea id="comment" name="comment" rows="4" required></textarea>
+					</div>
+
+					<div class="form-submit">
+						<button type="submit">Изпрати коментар</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="tab-content" id="shipping">
+			<p style="color:grey;"><b>Поръчките от Онлайн книжарница Ciela.com се доставят от Спиди, Еконт и BoxNow за България, и от Български пощи за чужбина.</b></p>
+			<p style="color:red;">
+				За поръчки под 50 лв., стойността на доставката е фиксирана на <b>5,99 лв.</b>
+				За поръчки с BOX NOW доставката е <b>3,99 лв.</b>
+				За поръчки на обща стойност над 50 лв. доставката е <b>безплатна.</b>
+			</p>
+			За чужбина доставката се изчислява според тарифите на Български пощи, и зависи от избраната държавата, броя, големината и теглото на поръчаните продукти. Крайната стойност се визуализира, преди завършване на поръчката.
+			<b>За поръчка на правен софутер няма доставка. Получавате потребителско име и парола по предоставен имейл след потвърдено заплащане.</b>
+
+		</div>
+	</div>
+
 </div>
+
+@if (User.IsInRole("Admin"))
+{
+	<div>
+		Брой: 	@Html.DisplayFor(model => model.Quantity)
+		<br />
+		Дата на добавяне:@Html.DisplayFor(model => model.DateRegister)
+	</div>
+
+	<div>
+		<a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+		<a asp-action="Index">Назад</a>
+	</div>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<div>
+	<h4>Book</h4>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.CatNumber)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.CatNumber)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Name)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Name)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Authors)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Authors.Id)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Publishers)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Publishers.Id)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Categories)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Categories.Id)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Genres)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Genres.Id)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Plot)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Plot)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.ImageURL)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.ImageURL)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Price)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Price)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Quantity)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Quantity)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Year)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Year)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.DateRegister)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.DateRegister)
+		</dd>
+	</dl>
+</div>
+
+
+
+<script>
+	document.querySelectorAll('.tab-btn').forEach(button => {
+	  button.addEventListener('click', () => {
+		const tab = button.dataset.tab;
+
+		// Активиране на бутоните
+		document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+		button.classList.add('active');
+
+		// Показване на съответното съдържание
+		document.querySelectorAll('.tab-content').forEach(content => {
+		  content.classList.remove('active');
+		});
+		document.getElementById(tab).classList.add('active');
+	  });
+	});
+</script>

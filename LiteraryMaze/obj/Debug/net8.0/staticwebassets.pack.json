@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\Photos\\bestseller.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\book1-1.png",
+      "PackagePath": "staticwebassets\\Photos\\book1-1.png"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\cart.png",
       "PackagePath": "staticwebassets\\Photos\\cart.png"
     },
@@ -83,6 +87,10 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\new-icon.png",
       "PackagePath": "staticwebassets\\Photos\\new-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\starsBuchler.png",
+      "PackagePath": "staticwebassets\\Photos\\starsBuchler.png"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\Photos\\stopWatch1.png",

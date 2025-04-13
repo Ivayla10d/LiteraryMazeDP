@@ -66,6 +66,7 @@ wwwroot\Photos\aboutUs2.png
 wwwroot\Photos\aboutUs3.png
 wwwroot\Photos\aboutUs4.png
 wwwroot\Photos\bestseller.jpg
+wwwroot\Photos\book1-1.png
 wwwroot\Photos\cart.png
 wwwroot\Photos\coins.png
 wwwroot\Photos\contacts.png
@@ -79,6 +80,7 @@ wwwroot\Photos\galery5.jpg
 wwwroot\Photos\location.png
 wwwroot\Photos\logo-last.png
 wwwroot\Photos\new-icon.png
+wwwroot\Photos\starsBuchler.png
 wwwroot\Photos\stopWatch1.png
 wwwroot\Photos\user.png
 wwwroot\Photos\userCard.png

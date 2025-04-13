@@ -419,7 +419,7 @@ table tr:nth-child(even) {
 }
 
 .description {
-    border: 2px solid #ddd;
+ 
     margin-left: 1%;
 }
 
@@ -506,17 +506,17 @@ table tr:nth-child(even) {
             color: white;
         }
 
-.dropdown :hover {
-    background-color: #b2a0c9; /* Същия цвят като на линковете */
-    color: white;
-}
+/*.dropdown :hover {
+    background-color: #b2a0c9;*/ /* Същия цвят като на линковете */
+    /*color: white;
+}*/
 
-.categoryFon {
+/*.categoryFon {
     font-weight: bold;
     color: #333;
     padding: 10px 20px;
 }
-
+*/
 .slideshow-container {
     position: relative;
     max-width: 100%;
