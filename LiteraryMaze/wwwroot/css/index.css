@@ -404,7 +404,8 @@ table tr:nth-child(even) {
 
 .information {
     padding-left: 6%;
-    padding-right: 5%;
+    padding-right: 5%; 
+
 }
 
 .grey-list {
