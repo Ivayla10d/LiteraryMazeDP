@@ -20,10 +20,18 @@ namespace LiteraryMaze.Controllers
         }
 
         // GET: Books
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? category)
         {
-            var applicationDbContext = _context.Books.Include(b => b.Authors).Include(b => b.Categories).Include(b => b.Genres).Include(b => b.Publishers);
-            return View(await applicationDbContext.ToListAsync());
+            var allData = _context.Books.Include(b => b.Authors)
+                .Include(b => b.Categories).Include(b => b.Genres)
+                .Include(b => b.Publishers);
+            if (category!= null)
+            {
+                var applicationDbContext = allData.Where(x => x.Categories.Name == category);
+                return View(await applicationDbContext.ToListAsync());
+            }
+            return View( await allData.ToListAsync());       
+           
         }
 
         // GET: Books/Details/5

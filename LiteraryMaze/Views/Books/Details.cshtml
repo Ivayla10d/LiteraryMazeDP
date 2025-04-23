@@ -243,6 +243,7 @@
 	  });
 	});
 </script>
+
 <script>
 	const img = document.getElementById('mainImage');
 	const lens = document.getElementById('zoomLens');
@@ -251,7 +252,7 @@
 	lens.style.backgroundImage = `url(${img.src})`;
 	lens.style.backgroundRepeat = "no-repeat";
 
-	const zoom = 2; // Колко пъти да се увеличава
+	const zoom = 2; 
 
 	img.addEventListener('mousemove', moveLens);
 	lens.addEventListener('mousemove', moveLens);

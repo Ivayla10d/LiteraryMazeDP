@@ -11,54 +11,54 @@
 	<link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
 	<style>
 		.dropbtn {
-			border-radius: 6px;
-			background-color: #f5f5f5;
-			color: black;
-			padding: 8px;
-			font-size: 16px;
-			border: none;
-			transition: all 0.1s ease-out;
+		border-radius: 6px;
+		background-color: #f5f5f5;
+		color: black;
+		padding: 8px;
+		font-size: 16px;
+		border: none;
+		transition: all 0.1s ease-out;
 		}
 
 		.dropdown {
-			position: relative;
-			display: inline-block;
-			transition: all 0.1s ease-out;
+		position: relative;
+		display: inline-block;
+		transition: all 0.1s ease-out;
 		}
 
 		.dropdown-content {
-			border-radius: 6px;
-			display: none;
-			position: absolute;
-			background-color: #f1f1f1;
-			min-width: 200px;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-			z-index: 1;
-			transition: all 0.1s ease-out;
+		border-radius: 6px;
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 200px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		transition: all 0.1s ease-out;
 		}
 
-			.dropdown-content a {
-				color: black;
-				padding: 12px 16px;
-				text-decoration: none;
-				display: block;
-				transition: all 0.1s ease-out;
-				border-radius: 6px;
-			}
+		.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		transition: all 0.1s ease-out;
+		border-radius: 6px;
+		}
 
-				.dropdown-content a:hover {
-					background-color: lightgray;
-					transition: all 0.1s ease-out;
-				}
+		.dropdown-content a:hover {
+		background-color: lightgray;
+		transition: all 0.1s ease-out;
+		}
 
 		.dropdown:hover .dropdown-content {
-			display: block;
-			transition: all 0.1s ease-out;
+		display: block;
+		transition: all 0.1s ease-out;
 		}
 
 		.dropdown:hover .dropbtn {
-			background-color: lightgray;
-			transition: all 0.1s ease-out;
+		background-color: lightgray;
+		transition: all 0.1s ease-out;
 		}
 	</style>
 </head>
@@ -82,7 +82,16 @@
 						aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button> *@
+			<div>
 
+				<nav class="nav-icons">
+					<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Map"><img src="~/Photos/location.png" width="40" /></a>
+					<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacts"><img src="~/Photos/contacts.png" width="40" /></a>
+					<a class="nav-link text-dark" asp-area="" asp-controller="Favorites" asp-action="Index"><img src="~/Photos/favorites.png" width="40" /></a>
+					<partial name="_LoginPartial" />
+					<a class="nav-link text-dark" asp-area="" asp-controller="Carts" asp-action="Index"><img src="~/Photos/cart.png" width="40" /></a>
+				</nav>
+			</div>
 		</div>
 		<div class="twoNavs">
 			<nav class="main-nav">
@@ -129,9 +138,9 @@
 							<div class="dropdown">
 								<button onclick="location.href='@Url.Action("Index", "Books")'" id="textchange" class="dropbtn">Каталог</button>
 								<div class="dropdown-content">
-									<a asp-area="" asp-controller="Books" asp-action="Index" asp-route-category="1">Българска литература</a>
-									<a asp-area="" asp-controller="Books" asp-action="Index" asp-route-category="2">Чуждоезикова литература</a>
-									<a asp-area="" asp-controller="Books" asp-action="Index" asp-route-category="3">Детска литература</a>
+									<a asp-area="" asp-controller="Books" asp-action="Index" asp-route-category="Българска литература">Българска литература</a>
+									<a asp-area="" asp-controller="Books" asp-action="Index" asp-route-category="Чуждоезикова литература">Чуждоезикова литература</a>
+									<a asp-area="" asp-controller="Books" asp-action="Index" asp-route-category="Детска литература">Детска литература</a>
 								</div>
 							</div>
 							
@@ -148,16 +157,7 @@
 
 
 			</nav>
-			<div>
-
-				<nav class="nav-icons">
-					<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Map"><img src="~/Photos/location.png" width="40" /></a>
-					<a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contacts"><img src="~/Photos/contacts.png" width="40" /></a>
-					<a class="nav-link text-dark" asp-area="" asp-controller="Favorites" asp-action="Index"><img src="~/Photos/favorites.png" width="40" /></a>
-					<partial name="_LoginPartial" />
-					<a class="nav-link text-dark" asp-area="" asp-controller="Carts" asp-action="Index"><img src="~/Photos/cart.png" width="40" /></a>
-				</nav>
-			</div>
+			
 		</div>
 	</div>
 

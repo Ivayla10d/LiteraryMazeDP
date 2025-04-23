@@ -92,12 +92,12 @@ h5 {
 h6 {
   font-size: 1rem;
 }
-
+/*
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
+*/
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;

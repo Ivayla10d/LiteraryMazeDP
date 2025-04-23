@@ -30,7 +30,7 @@
 
 .conteiner {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .twoNavs {
     display: flex;
@@ -1110,8 +1110,27 @@ header {
     font-size: 20px;
     background-color: rgba(132, 132, 132, 0.1); /* Сив фон с 50% прозрачност */
     padding: 70px;
+    margin-bottom: 2%;
 }
 #beginPage {
     text-align: center;
 
+}
+.btn-link {
+    display: inline-block;
+    background-color: grey ;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+    .btn-link:hover {
+        background-color: lightgray;
+        color: white;
+    }
+crateNew {
+    margin-top: 2%;
 }

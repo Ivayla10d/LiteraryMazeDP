@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Br5bArgfuxJNKE50iLRdZp0Ia8Q05+rR1aTU2gNVZ7Y=",
+  "Hash": "b+16kh2gxX86wePY5u7uf1RZjfH3IvohhaneDLyj+TI=",
   "Source": "LiteraryMaze",
   "BasePath": "_content/LiteraryMaze",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "m6tszmpa5h",
-      "Integrity": "QlLg8NhezKCdjY1LZc+ayxYTGUuJQ0iJMHetJB94E1k=",
+      "Fingerprint": "6dx0a9eea2",
+      "Integrity": "Fumyb6YPgTyqeoz/iT+NhPyxH3M7DNN0LBSfSohnjJU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\index.css"
@@ -1795,8 +1795,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7na4sro3qu",
-      "Integrity": "4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY=",
+      "Fingerprint": "mrxz3w51em",
+      "Integrity": "sohKzyQ8EaxyBYo1irig1O1jbMiDsHxojhTks3FEPRU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
@@ -3127,6 +3127,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/index.6dx0a9eea2.css",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\css\\index.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24853"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fumyb6YPgTyqeoz/iT+NhPyxH3M7DNN0LBSfSohnjJU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 10:10:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6dx0a9eea2"
+        },
+        {
+          "Name": "label",
+          "Value": "css/index.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fumyb6YPgTyqeoz/iT+NhPyxH3M7DNN0LBSfSohnjJU="
+        }
+      ]
+    },
+    {
       "Route": "css/index.css",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\css\\index.css",
       "Selectors": [],
@@ -3137,7 +3182,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "24459"
+          "Value": "24853"
         },
         {
           "Name": "Content-Type",
@@ -3145,11 +3190,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QlLg8NhezKCdjY1LZc+ayxYTGUuJQ0iJMHetJB94E1k=\""
+          "Value": "\"Fumyb6YPgTyqeoz/iT+NhPyxH3M7DNN0LBSfSohnjJU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 10:31:49 GMT"
+          "Value": "Wed, 23 Apr 2025 10:10:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3159,52 +3204,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QlLg8NhezKCdjY1LZc+ayxYTGUuJQ0iJMHetJB94E1k="
-        }
-      ]
-    },
-    {
-      "Route": "css/index.m6tszmpa5h.css",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\css\\index.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24459"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"QlLg8NhezKCdjY1LZc+ayxYTGUuJQ0iJMHetJB94E1k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 13 Apr 2025 10:31:49 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m6tszmpa5h"
-        },
-        {
-          "Name": "label",
-          "Value": "css/index.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-QlLg8NhezKCdjY1LZc+ayxYTGUuJQ0iJMHetJB94E1k="
+          "Value": "sha256-Fumyb6YPgTyqeoz/iT+NhPyxH3M7DNN0LBSfSohnjJU="
         }
       ]
     },
@@ -7151,51 +7151,6 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5850"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 09:09:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7na4sro3qu"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY="
-        }
-      ]
-    },
-    {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
@@ -7206,7 +7161,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5850"
+          "Value": "5854"
         },
         {
           "Name": "Content-Type",
@@ -7214,11 +7169,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY=\""
+          "Value": "\"sohKzyQ8EaxyBYo1irig1O1jbMiDsHxojhTks3FEPRU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 09:09:17 GMT"
+          "Value": "Wed, 23 Apr 2025 10:19:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7228,7 +7183,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4zbWr0QNFhpUwGkn4WdGWXt80KnhRFv0qXkZyVnhajY="
+          "Value": "sha256-sohKzyQ8EaxyBYo1irig1O1jbMiDsHxojhTks3FEPRU="
         }
       ]
     },
@@ -7475,6 +7430,51 @@
         {
           "Name": "integrity",
           "Value": "sha256-z0OApR88UEocYXTXHU7Ueycaiib9XbDUmel9Gx0gbx4="
+        }
+      ]
+    },
+    {
+      "Route": "lib/bootstrap/dist/css/bootstrap-reboot.mrxz3w51em.css",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\Дипломен Белезирева\\LiteraryMaze\\LiteraryMaze\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sohKzyQ8EaxyBYo1irig1O1jbMiDsHxojhTks3FEPRU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 10:19:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mrxz3w51em"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/bootstrap/dist/css/bootstrap-reboot.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sohKzyQ8EaxyBYo1irig1O1jbMiDsHxojhTks3FEPRU="
         }
       ]
     },
