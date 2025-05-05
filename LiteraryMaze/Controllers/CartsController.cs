@@ -7,19 +7,65 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LiteraryMaze.Data;
 using Microsoft.AspNetCore.Identity;
-
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 namespace LiteraryMaze.Controllers
 {
+    [Authorize]
     public class CartsController : Controller
     {
         private readonly ApplicationDbContext _context;
-        private readonly UserManager<User> _userManager;
+        //private readonly UserManager<User> _userManager;
 
-        public CartsController(ApplicationDbContext context, UserManager<User> userManager)
+        public CartsController(ApplicationDbContext context
+            //, UserManager<User> userManager
+            )
         {
             _context = context;
-            _userManager = userManager;
+            //_userManager = userManager;
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<JsonResult> Add(int bookId)
+        {
+            try
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Json(new { success = false, message = "Не сте влезли в системата." });
+                }
+
+                var cartItem = await _context.Carts
+                    .FirstOrDefaultAsync(c => c.BookId == bookId && c.UserId == userId);
+
+                if (cartItem == null)
+                {
+                    _context.Carts.Add(new Cart
+                    {
+                        BookId = bookId,
+                        UserId = userId,
+                        DateRegister = DateTime.Now,
+                        Description = "-", // optional or load from book
+                        Quantity = 1
+                    });
+                }
+                else
+                {
+                    cartItem.Quantity += 1;
+                    _context.Carts.Update(cartItem);
+                }
+
+                await _context.SaveChangesAsync();
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+
+
 
         // GET: Carts
         public async Task<IActionResult> Index()
