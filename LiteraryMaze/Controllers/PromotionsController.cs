@@ -122,7 +122,7 @@ namespace LiteraryMaze.Controllers
             ViewData["BookId"] = new SelectList(_context.Books, "Id", "Name", promotion.BookId);
             return View(promotion);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Promotions/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

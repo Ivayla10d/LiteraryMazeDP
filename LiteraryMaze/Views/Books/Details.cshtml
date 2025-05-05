@@ -83,7 +83,31 @@
 		background-repeat: no-repeat;
 		display: none;
 	}
+
+	.heart-button {
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		transition: transform 0.2s;
+	}
+
+		.heart-button:hover {
+			transform: scale(1.1);
+		}
+
+	#heartIcon {
+		stroke: gray;
+		fill: none;
+		transition: all 0.3s ease;
+	}
+
+	.liked #heartIcon {
+		stroke: red;
+		fill: red;
+	}
 </style>
+
 <h1>Details</h1>
 
 <div class="content-scroll">
@@ -127,11 +151,21 @@
 				<div>
 					<h5><i>Добави в любими:</i></h5>
 				</div>
-				<div class="like-button">
+				<div>
+					<form method="post" asp-controller="Favorite" asp-action="Add" id="favoriteForm">
+						@Html.AntiForgeryToken()
+						<button type="button" id="likeButton" data-book-id="@Model.Id" class="heart-button" aria-label="Добави в любими">
+							<svg id="heartIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M20.8 4.6c-1.6-1.5-4.1-1.5-5.7 0l-.9.9-.9-.9c-1.6-1.5-4.1-1.5-5.7 0s-1.6 4.1 0 5.7l6.6 6.6 6.6-6.6c1.6-1.6 1.6-4.1 0-5.7z"></path>
+							</svg>
+						</button>
+					</form>
 
-					<input type="checkbox" id="like" class="like-checkbox">
-					<label for="like" class="like-label">&#9829;</label> <!-- Unicode символ за сърце -->
+					<div id="message" style="display:none; position:fixed; top:0; left:50%; transform:translateX(-50%); background-color:green; color:white; padding:10px; z-index:1000;">
+						Запазено в любими!
+					</div>
 				</div>
+
 			</div>
 		</div>
 		<div class="book-details">
@@ -252,7 +286,7 @@
 	lens.style.backgroundImage = `url(${img.src})`;
 	lens.style.backgroundRepeat = "no-repeat";
 
-	const zoom = 2; 
+	const zoom = 2;
 
 	img.addEventListener('mousemove', moveLens);
 	lens.addEventListener('mousemove', moveLens);
@@ -293,4 +327,37 @@
 	  lens.style.display = "none";
 	  result.style.display = "none";
 	}
+</script>
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const likeButton = document.getElementById('likeButton');
+		const bookId = likeButton.dataset.bookId;
+		const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+		const message = document.getElementById('message');
+
+		likeButton.addEventListener('click', function () {
+			fetch('/Favorites/Add', {  // Update URL here from '/Favorite/Add' to '/Favorites/Add'
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded',
+					'RequestVerificationToken': token
+				},
+				body: `bookId=${encodeURIComponent(bookId)}`
+			})
+			.then(response => response.json())
+			.then(data => {
+				if (data.success) {
+					likeButton.classList.add('liked');
+					message.style.display = 'block';
+					setTimeout(() => message.style.display = 'none', 3000);
+				} else {
+					alert("Грешка: " + data.message);
+				}
+			})
+			.catch(err => {
+				alert("Грешка при заявката.");
+				console.error(err);
+			});
+		});
+	});
 </script>

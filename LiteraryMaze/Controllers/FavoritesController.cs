@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using LiteraryMaze.Data;
 using Microsoft.AspNetCore.Authorization;
-
+using System.Security.Claims;
 namespace LiteraryMaze.Controllers
 {
     [Authorize]
@@ -26,6 +26,44 @@ namespace LiteraryMaze.Controllers
             var applicationDbContext = _context.Favorites.Include(f => f.Books).Include(f => f.Users);
             return View(await applicationDbContext.ToListAsync());
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<JsonResult> Add(int bookId)
+        {
+            try
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Json(new { success = false, message = "Не сте влезли в системата." });
+                }
+
+                if (!_context.Favorites.Any(f => f.BookId == bookId && f.UserId == userId))
+                {
+                    _context.Favorites.Add(new Favorite
+                    {
+                        BookId = bookId,
+                        UserId = userId,
+                        DateRegister = DateTime.Now,
+                        Description = "-",
+                        Quantity = 0
+                    });
+
+                    await _context.SaveChangesAsync();
+                }
+
+                return Json(new { success = true });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+
+
+
+
+
 
         // GET: Favorites/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -98,34 +136,59 @@ namespace LiteraryMaze.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,UserId,BookId,Quantity,Description,DateRegister")] Favorite favorite)
         {
-            if (id != favorite.Id)
-            {
-                return NotFound();
-            }
 
             if (ModelState.IsValid)
             {
-                try
+                if (string.IsNullOrWhiteSpace(favorite.Description))
                 {
-                    _context.Update(favorite);
+                    ModelState.AddModelError("Description", "Description cannot be empty.");
+                }
+
+                // If Description is empty, add an error and return to the form
+                if (favorite.Quantity < 1)
+                {
+                    ModelState.AddModelError("Quantity", "Quantity must be at least 1.");
+                }
+
+                if (ModelState.IsValid)
+                {
+                    _context.Add(favorite);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!FavoriteExists(favorite.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
             }
             ViewData["BookId"] = new SelectList(_context.Books, "Id", "Id", favorite.BookId);
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", favorite.UserId);
             return View(favorite);
+
+            //if (id != favorite.Id)
+            //{
+            //    return NotFound();
+            //}
+
+            //if (ModelState.IsValid)
+            //{
+            //    try
+            //    {
+            //        _context.Update(favorite);
+            //        await _context.SaveChangesAsync();
+            //    }
+            //    catch (DbUpdateConcurrencyException)
+            //    {
+            //        if (!FavoriteExists(favorite.Id))
+            //        {
+            //            return NotFound();
+            //        }
+            //        else
+            //        {
+            //            throw;
+            //        }
+            //    }
+            //    return RedirectToAction(nameof(Index));
+            //}
+            //ViewData["BookId"] = new SelectList(_context.Books, "Id", "Id", favorite.BookId);
+            //ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", favorite.UserId);
+            //return View(favorite);
         }
 
         // GET: Favorites/Delete/5

@@ -19,14 +19,9 @@
                 @Html.DisplayNameFor(model => model.Books)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Quantity)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DateRegister)
-            </th>
+         
             <th></th>
         </tr>
     </thead>
@@ -37,17 +32,12 @@
                 @Html.DisplayFor(modelItem => item.Users.Id)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Books.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
+                @Html.DisplayFor(modelItem => item.Books.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateRegister)
-            </td>
+       
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
