@@ -1,49 +1,125 @@
 ﻿@model IEnumerable<LiteraryMaze.Data.Favorite>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
+<style>
+	.fav-conteiner {
+		display: flex;
+		justify-content: space-between;
+	}
 
-<h1>Index</h1>
+	.custom-line {
+		border: none;
+		height: 1px;
+		background-color: black;
+		width: 100%;
+		margin: 20px 0; /* по избор */
+	}
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Users)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Books)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-         
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Users.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Books.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-       
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+	.line-fav {
+		text-align: center;
+	}
+
+	.book-info {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.info-fav-book {
+		margin-left: 10px;
+	}
+
+	.buttons-fav-user{
+		text-align: center;
+	}
+</style>
+<br />
+<br />
+
+<h1>Любими</h1>
+@foreach (var item in Model)
+{
+	<div class="fav-conteiner">
+		<div class="book-info">
+			<div class="img-cover-fav">
+
+				<img src="@Html.DisplayFor(modelItem => item.Books.ImageURL)" width="100" height="100" id="mainImage" />
+			</div>
+			<div class="info-fav-book">
+				<p> @Html.DisplayFor(modelItem => item.Books.Name) </p>
+				<p>
+					<b>Година на издаване:</b> @Html.DisplayFor(modelItem => item.Books.Year)
+				</p>
+				<p> <b>Цена:</b> @Html.DisplayFor(modelItem => item.Books.Price)</p>
+			</div>
+
+		</div>
+		<div class="line-fav">
+			<p>
+				---------------------
+			</p>
+		</div>
+
+		<div class="buttons-fav-user">
+			<div>
+				<a asp-action="Details" asp-route-id="@item.Id"
+				   style="background-color: dimgrey; color: white; padding: 8px 16px; border: none; border-radius: 4px; text-decoration: none; display: inline-block;">
+					Детайли
+				</a>
+			</div>
+			<br />
+			<div class="addCart">
+				<div>
+					<form method="post" asp-controller="Cart" asp-action="Add" id="cartForm">
+						@Html.AntiForgeryToken()
+						<button type="button" id="cartButton" data-book-id="@item.Books.Id" class="cart-button" aria-label="Добави в количка">
+							Добави в количка
+						</button>
+					</form>
+					<div id="cart-message" style="display:none; position:fixed; top:0; left:50%; transform:translateX(-50%); background-color:green; color:white; padding:10px; z-index:1000;">
+						Добавено в количка!
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<hr class="custom-line" />
 }
-    </tbody>
-</table>
+<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		const cartButton = document.getElementById('cartButton');
+		const bookId = cartButton.dataset.bookId;
+		const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+		const message = document.getElementById('cart-message');
+
+		cartButton.addEventListener('click', function () {
+			fetch('/Carts/Add', { // Ensure this matches your controller route
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/x-www-form-urlencoded',
+					'RequestVerificationToken': token
+				},
+				body: `bookId=${encodeURIComponent(bookId)}`
+			})
+			.then(response => response.json())
+			.then(data => {
+				if (data.success) {
+					cartButton.classList.add('added-to-cart');
+					message.style.display = 'block';
+					setTimeout(() => message.style.display = 'none', 3000);
+				} else {
+					alert("Грешка: " + data.message);
+				}
+			})
+			.catch(err => {
+				alert("Грешка при добавяне в количката.");
+				console.error(err);
+			});
+		});
+	});
+
+</script>
+

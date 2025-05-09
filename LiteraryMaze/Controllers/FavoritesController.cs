@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using LiteraryMaze.Data;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 namespace LiteraryMaze.Controllers
 {
     [Authorize]
@@ -57,6 +58,7 @@ namespace LiteraryMaze.Controllers
             catch (Exception ex)
             {
                 return Json(new { success = false, message = ex.Message });
+
             }
         }
 
