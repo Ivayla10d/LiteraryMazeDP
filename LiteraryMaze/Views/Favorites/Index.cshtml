@@ -3,37 +3,7 @@
 @{
 	ViewData["Title"] = "Index";
 }
-<style>
-	.fav-conteiner {
-		display: flex;
-		justify-content: space-between;
-	}
 
-	.custom-line {
-		border: none;
-		height: 1px;
-		background-color: black;
-		width: 100%;
-		margin: 20px 0; /* по избор */
-	}
-
-	.line-fav {
-		text-align: center;
-	}
-
-	.book-info {
-		display: flex;
-		justify-content: space-evenly;
-	}
-
-	.info-fav-book {
-		margin-left: 10px;
-	}
-
-	.buttons-fav-user{
-		text-align: center;
-	}
-</style>
 <br />
 <br />
 
@@ -63,7 +33,7 @@
 
 		<div class="buttons-fav-user">
 			<div>
-				<a asp-action="Details" asp-route-id="@item.Id"
+				<a asp-controller="Books" asp-action="Details" asp-route-id="@item.Id"
 				   style="background-color: dimgrey; color: white; padding: 8px 16px; border: none; border-radius: 4px; text-decoration: none; display: inline-block;">
 					Детайли
 				</a>
