@@ -14,6 +14,10 @@ namespace LiteraryMaze.Controllers
     [Authorize]
     public class OrdersController : Controller
     {
+        public IActionResult OrderSuccess()
+        {
+            return View();
+        }
         private readonly ApplicationDbContext _context;
         private readonly UserManager<User> _userManager;
 
@@ -45,7 +49,51 @@ namespace LiteraryMaze.Controllers
             
            
         }
+        public async Task<IActionResult> CreateFromCart()
+        {
+            var userId = _userManager.GetUserId(User);
+            var cartItems = await _context.Carts
+                .Include(c => c.Books)
+                .Where(c => c.UserId == userId)
+                .ToListAsync();
 
+            if (!cartItems.Any())
+            {
+                return RedirectToAction("Index", "Cart"); // or show a message
+            }
+
+            foreach (var cartItem in cartItems)
+            {
+                if (cartItem.Books.Quantity < cartItem.Quantity)
+                {
+                    // Not enough stock
+                    TempData["Error"] = $"Няма достатъчно наличност от \"{cartItem.Books.Name}\".";
+                    return RedirectToAction("Index", "Cart");
+                }
+
+                // Create order
+                var order = new Order
+                {
+                    UserId = userId,
+                    BookId = cartItem.BookId,
+                    Quantity = cartItem.Quantity,
+                    Description = cartItem.Description,
+                    DateRegister = DateTime.Now
+                };
+
+                _context.Orders.Add(order);
+
+                // Reduce stock
+                cartItem.Books.Quantity -= cartItem.Quantity;
+            }
+
+            // Optionally: clear cart
+            _context.Carts.RemoveRange(cartItems);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("OrderSuccess");
+        }
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {

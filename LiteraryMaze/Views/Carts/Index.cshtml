@@ -1,9 +1,149 @@
-﻿@model IEnumerable<LiteraryMaze.Data.Cart>
+﻿ @model IEnumerable<LiteraryMaze.Data.Cart>
 
 @{
 	ViewData["Title"] = "Index";
 }
 
+<style>
+	/* General Page Styling */
+	body {
+		font-family: 'Arial', sans-serif;
+		background-color: #f4f7fa;
+		color: #333;
+		margin: 0;
+		padding: 0;
+	}
+	h2 {
+		text-align: center;
+		font-size: 1.5rem;
+		color: #555;
+		margin-top: 10px;
+		font-weight: 500;
+	}
+
+	/* Order Success Section */
+	.order-success-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 40px;
+		background-color: #fff;
+		border-radius: 10px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		margin: 40px auto;
+		max-width: 800px;
+		text-align: center;
+	}
+
+		.order-success-container h1 {
+			font-size: 2rem;
+			color: #28a745;
+			margin-bottom: 15px;
+		}
+
+		.order-success-container p {
+			font-size: 1.2rem;
+			color: #333;
+			margin-bottom: 25px;
+		}
+
+		.order-success-container .success-message {
+			font-weight: bold;
+			color: #28a745;
+			margin-bottom: 15px;
+		}
+
+		/* Success Icon */
+		.order-success-container .success-icon {
+			font-size: 50px;
+			color: #28a745;
+			margin-bottom: 20px;
+		}
+
+	/* Button Styling (Keeping 'Поръчай' Button Unchanged) */
+	.catalog-btn {
+		display: inline-block;
+		padding: 12px 25px;
+		background-color: #007bff;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 5px;
+		font-size: 16px;
+		transition: background-color 0.3s ease;
+	}
+
+		.catalog-btn:hover {
+			background-color: #0056b3;
+		}
+
+	/* Action Buttons */
+	.action-buttons {
+		margin-top: 30px;
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+	}
+
+		.action-buttons a {
+			text-decoration: none;
+			font-size: 1.1rem;
+			padding: 10px 20px;
+			background-color: #28a745;
+			color: #fff;
+			border-radius: 5px;
+			transition: background-color 0.3s ease;
+		}
+
+			.action-buttons a:hover {
+				background-color: #218838;
+			}
+
+			.action-buttons a:active {
+				background-color: #1c7430;
+			}
+
+	/* Order Details Styling */
+	.order-details {
+		margin-top: 20px;
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+		.order-details th, .order-details td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+
+		.order-details th {
+			background-color: #f8f9fa;
+		}
+
+		.order-details tr:hover {
+			background-color: #f1f1f1;
+		}
+
+	/* Separator */
+	.separator {
+		margin: 20px 0;
+		border-top: 1px solid #ddd;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Alert for Errors or Warnings */
+	.alert-danger {
+		color: white;
+		background-color: #f44336;
+		padding: 15px;
+		margin-top: 20px;
+		border-radius: 5px;
+		font-weight: bold;
+	}
+</style>
 <h1>Количка</h1>
 
 
@@ -37,27 +177,8 @@
 	}
 </div>
 
-<div class="catalog-order">
-	<a href="#" class="catalog-btn order-btn">Поръчай</a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<a asp-controller="Orders" asp-action="CreateFromCart" class="catalog-btn order-btn">Поръчай</a>
+ 
 
 
 

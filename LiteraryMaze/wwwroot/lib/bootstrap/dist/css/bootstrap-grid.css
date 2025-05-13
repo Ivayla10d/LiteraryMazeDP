@@ -43,7 +43,7 @@
     max-width: 1320px;
   }
 }*/
-.row {
+/*.row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -4992,6 +4992,6 @@
   .d-print-none {
     display: none !important;
   }
-}
+}*/
 
 /*# sourceMappingURL=bootstrap-grid.css.map */

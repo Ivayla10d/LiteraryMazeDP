@@ -22,10 +22,27 @@ namespace LiteraryMaze.Controllers
         // GET: Promotions
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Promotions.Include(p => p.Books);
-            return View(await applicationDbContext.ToListAsync());
-        }
+            var now = DateTime.Now;
 
+            // Remove expired promotions
+            var expired = await _context.Promotions
+                .Where(p => p.EndDate < now)
+                .ToListAsync();
+
+            if (expired.Any())
+            {
+                _context.Promotions.RemoveRange(expired);
+                await _context.SaveChangesAsync();
+            }
+
+            // Continue with active promotions
+            var promotions = await _context.Promotions
+                .Include(p => p.Books)
+                .ToListAsync();
+
+            return View(promotions);
+        }
+     
         // GET: Promotions/Details/5
         public async Task<IActionResult> Details(int? id)
         {
