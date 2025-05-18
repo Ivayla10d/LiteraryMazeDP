@@ -27,6 +27,49 @@ namespace LiteraryMaze.Controllers
             var applicationDbContext = _context.Favorites.Include(f => f.Books).Include(f => f.Users);
             return View(await applicationDbContext.ToListAsync());
         }
+        [HttpGet]
+        public async Task<JsonResult> IsFavorite(int bookId)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Json(new { success = false, isFavorite = false });
+            }
+
+            var isFav = await _context.Favorites.AnyAsync(f => f.BookId == bookId && f.UserId == userId);
+            return Json(new { success = true, isFavorite = isFav });
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<JsonResult> DeleteFavorite(int bookId)
+        {
+            try
+            {
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return Json(new { success = false, message = "Не сте влезли в системата." });
+                }
+
+                var favorite = await _context.Favorites
+                    .FirstOrDefaultAsync(f => f.BookId == bookId && f.UserId == userId);
+
+                if (favorite != null)
+                {
+                    _context.Favorites.Remove(favorite);
+                    await _context.SaveChangesAsync();
+                    return Json(new { success = true });
+                }
+                else
+                {
+                    return Json(new { success = false, message = "Любимото не беше намерено." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<JsonResult> Add(int bookId)

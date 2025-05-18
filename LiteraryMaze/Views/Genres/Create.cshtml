@@ -1,43 +1,139 @@
 ﻿@model LiteraryMaze.Data.Genre
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Създай";
 }
 
-<h1>Create</h1>
+<style>
+    .create-page-wrapper {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f9;
+        padding: 0;
+        margin: 0;
+    }
 
-<h4>Genre</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageURL" class="control-label"></label>
-                <input asp-for="ImageURL" class="form-control" />
-                <span asp-validation-for="ImageURL" class="text-danger"></span>
-            </div>
-          @*   <div class="form-group">
-                <label asp-for="DateRegister" class="control-label"></label>
-                <input asp-for="DateRegister" class="form-control" />
-                <span asp-validation-for="DateRegister" class="text-danger"></span>
-            </div> *@
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+    .create-page-title {
+        text-align: center;
+        color: #333;
+        margin-top: 30px;
+    }
+
+    .create-page-subtitle {
+        text-align: center;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .create-form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .create-form-box {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .create-form-group {
+        margin-bottom: 20px;
+    }
+
+    .create-label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .create-input {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .create-btn {
+        background-color: #e6ccff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        color: #4b0082;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .create-btn:hover {
+            background-color: #d9b3ff;
+        }
+
+    .create-back-link {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        background: linear-gradient(to bottom, #b0b0b0, #666);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+        .create-back-link:hover {
+            background: linear-gradient(to bottom, #a0a0a0, #555);
+        }
+
+    .create-validation {
+        color: #dc3545;
+        font-size: 14px;
+    }
+</style>
+
+<div class="create-page-wrapper">
+    <h1 class="create-page-title">Създай нов жанр</h1>
+
+    <h4 class="create-page-subtitle">Жанр</h4>
+    <hr />
+    <div class="create-form-container">
+        <div class="create-form-box">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="create-validation"></div>
+
+                <div class="create-form-group">
+                    <label asp-for="Name" class="create-label">Име</label>
+                    <input asp-for="Name" class="create-input" />
+                    <span asp-validation-for="Name" class="create-validation"></span>
+                </div>
+
+                <div class="create-form-group">
+                    <label asp-for="ImageURL" class="create-label">Изображение (URL)</label>
+                    <input asp-for="ImageURL" class="create-input" />
+                    <span asp-validation-for="ImageURL" class="create-validation"></span>
+                </div>
+
+                <div class="create-form-group">
+                    <input type="submit" value="Създай" class="create-btn" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div style="text-align:center;">
+        <a asp-action="Index" class="create-back-link">Назад</a>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<br />
+<br />
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

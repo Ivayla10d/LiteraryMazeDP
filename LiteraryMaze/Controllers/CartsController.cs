@@ -14,6 +14,18 @@ namespace LiteraryMaze.Controllers
     [Authorize]
     public class CartsController : Controller
     {
+        [HttpPost]
+        public async Task<IActionResult> UpdateQuantity(int id, int change)
+        {
+            var cartItem = await _context.Carts.FindAsync(id);
+            if (cartItem == null) return NotFound();
+
+            cartItem.Quantity = Math.Max(1, cartItem.Quantity + change);
+            _context.Update(cartItem);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
         private readonly ApplicationDbContext _context;
         //private readonly UserManager<User> _userManager;
 

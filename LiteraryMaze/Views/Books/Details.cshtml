@@ -128,18 +128,17 @@
 			background-color: #b3b3b3; /* darker gray on hover */
 		}
 
-	.book-description{
-		margin-top:2%;
+	.book-description {
+		margin-top: 2%;
 	}
 
-	.information{
+	.information {
 		margin-top: 4%;
 	}
 
-	.book-details{
+	.book-details {
 		margin-top: 3%;
 	}
-	
 </style>
 
 
@@ -387,32 +386,72 @@
 		const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
 		const message = document.getElementById('message');
 
-		likeButton.addEventListener('click', function () {
-			fetch('/Favorites/Add', {  // Update URL here from '/Favorite/Add' to '/Favorites/Add'
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded',
-					'RequestVerificationToken': token
-				},
-				body: `bookId=${encodeURIComponent(bookId)}`
-			})
+		// ✅ Ново: провери дали книгата вече е харесана
+		fetch(`/Favorites/IsFavorite?bookId=${encodeURIComponent(bookId)}`)
 			.then(response => response.json())
 			.then(data => {
-				if (data.success) {
-					likeButton.classList.add('liked');
-					message.style.display = 'block';
-					setTimeout(() => message.style.display = 'none', 3000);
-				} else {
-					alert("Грешка: " + data.message);
+				if (data.success && data.isFavorite) {
+					likeButton.classList.add('liked'); // маркира като харесано
 				}
 			})
 			.catch(err => {
-				alert("Грешка при заявката.");
-				console.error(err);
+				console.error("Грешка при проверка за любими:", err);
 			});
+
+		likeButton.addEventListener('click', function () {
+			if (likeButton.classList.contains('liked')) {
+				fetch('/Favorites/DeleteFavorite', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded',
+						'RequestVerificationToken': token
+					},
+					body: `bookId=${encodeURIComponent(bookId)}`
+				})
+					.then(response => response.json())
+					.then(data => {
+						if (data.success) {
+							likeButton.classList.remove('liked');
+							message.textContent = 'Премахнато от любими';
+							message.style.display = 'block';
+							setTimeout(() => message.style.display = 'none', 3000);
+						} else {
+							alert("Грешка: " + data.message);
+						}
+					})
+					.catch(err => {
+						alert("Грешка при заявката.");
+						console.error(err);
+					});
+			} else {
+				fetch('/Favorites/Add', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded',
+						'RequestVerificationToken': token
+					},
+					body: `bookId=${encodeURIComponent(bookId)}`
+				})
+					.then(response => response.json())
+					.then(data => {
+						if (data.success) {
+							likeButton.classList.add('liked');
+							message.textContent = 'Добавено в любими';
+							message.style.display = 'block';
+							setTimeout(() => message.style.display = 'none', 3000);
+						} else {
+							alert("Грешка: " + data.message);
+						}
+					})
+					.catch(err => {
+						alert("Грешка при заявката.");
+						console.error(err);
+					});
+			}
 		});
 	});
 </script>
+
 <script>
 			document.addEventListener('DOMContentLoaded', function () {
 		const cartButton = document.getElementById('cartButton');

@@ -18,6 +18,7 @@
 			</div>
 			<div class="info-fav-book">
 				<p> @Html.DisplayFor(modelItem => item.Books.Name) </p>
+				
 				<p>
 					<b>Година на издаване:</b> @Html.DisplayFor(modelItem => item.Books.Year)
 				</p>
@@ -33,10 +34,15 @@
 
 		<div class="buttons-fav-user">
 			<div>
-				<a asp-controller="Books" asp-action="Details" asp-route-id="@item.Id"
+				<a asp-controller="Books" asp-action="Details" asp-route-id="@item.Books.Id"
 				   style="background-color: dimgrey; color: white; padding: 8px 16px; border: none; border-radius: 4px; text-decoration: none; display: inline-block;">
 					Детайли
 				</a>
+			</div>
+			<br />
+			<div>
+				<a asp-controller="Favorites" asp-action="Delete" asp-route-id="@item.Id">Премахни от любими</a>
+			
 			</div>
 			<br />
 			<div class="addCart">
@@ -59,34 +65,37 @@
 	<hr class="custom-line" />
 }
 <script>
-		document.addEventListener('DOMContentLoaded', function () {
-		const cartButton = document.getElementById('cartButton');
-		const bookId = cartButton.dataset.bookId;
-		const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+	document.addEventListener('DOMContentLoaded', function () {
+		const cartButtons = document.querySelectorAll('.cart-button');  // Select all buttons
 		const message = document.getElementById('cart-message');
 
-		cartButton.addEventListener('click', function () {
-			fetch('/Carts/Add', { // Ensure this matches your controller route
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/x-www-form-urlencoded',
-					'RequestVerificationToken': token
-				},
-				body: `bookId=${encodeURIComponent(bookId)}`
-			})
-			.then(response => response.json())
-			.then(data => {
-				if (data.success) {
-					cartButton.classList.add('added-to-cart');
-					message.style.display = 'block';
-					setTimeout(() => message.style.display = 'none', 3000);
-				} else {
-					alert("Грешка: " + data.message);
-				}
-			})
-			.catch(err => {
-				alert("Грешка при добавяне в количката.");
-				console.error(err);
+		cartButtons.forEach(cartButton => {
+			cartButton.addEventListener('click', function () {
+				const bookId = cartButton.dataset.bookId;
+				const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+				fetch('/Carts/Add', { // Ensure this matches your controller route
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded',
+						'RequestVerificationToken': token
+					},
+					body: `bookId=${encodeURIComponent(bookId)}`
+				})
+				.then(response => response.json())
+				.then(data => {
+					if (data.success) {
+						cartButton.classList.add('added-to-cart');
+						message.style.display = 'block';
+						setTimeout(() => message.style.display = 'none', 3000);
+					} else {
+						alert("Грешка: " + data.message);
+					}
+				})
+				.catch(err => {
+					alert("Грешка при добавяне в количката.");
+					console.error(err);
+				});
 			});
 		});
 	});

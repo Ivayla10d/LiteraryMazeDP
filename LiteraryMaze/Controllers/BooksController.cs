@@ -20,19 +20,45 @@ namespace LiteraryMaze.Controllers
         }
 
         // GET: Books
-        public async Task<IActionResult> Index(string? category)
+        public async Task<IActionResult> Index(string? category, string? searchString)
         {
-            var allData = _context.Books.Include(b => b.Authors)
-                .Include(b => b.Categories).Include(b => b.Genres)
+            var allData = _context.Books
+                .Include(b => b.Authors)
+                .Include(b => b.Categories)
+                .Include(b => b.Genres)
                 .Include(b => b.Publishers);
-            if (category!= null)
+
+            if (!string.IsNullOrEmpty(searchString))
             {
-                var applicationDbContext = allData.Where(x => x.Categories.Name == category);
-                return View(await applicationDbContext.ToListAsync());
+                // You can search by book name or author name
+                var filtered = allData.Where(b =>
+                    b.Name.Contains(searchString) ||
+                    b.Authors.Name.Contains(searchString)); // assuming 1 author per book
+
+                return View(await filtered.ToListAsync());
             }
-            return View( await allData.ToListAsync());       
-           
+
+            if (category != null)
+            {
+                var byCategory = allData.Where(x => x.Categories.Name == category);
+                return View(await byCategory.ToListAsync());
+            }
+
+            return View(await allData.ToListAsync());
         }
+        //public async Task<IActionResult> Index(string? category)
+        //{
+        //    var allData = _context.Books.Include(b => b.Authors)
+        //        .Include(b => b.Categories).Include(b => b.Genres)
+        //        .Include(b => b.Publishers);
+        //    if (category!= null)
+        //    {
+        //        var applicationDbContext = allData.Where(x => x.Categories.Name == category);
+        //        return View(await applicationDbContext.ToListAsync());
+        //    }
+        //    return View( await allData.ToListAsync());       
+
+        //}
 
         // GET: Books/Details/5
         public async Task<IActionResult> Details(int? id)

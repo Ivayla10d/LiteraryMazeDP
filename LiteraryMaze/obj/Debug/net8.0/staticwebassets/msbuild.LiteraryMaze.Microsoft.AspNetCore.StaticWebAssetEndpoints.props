@@ -760,13 +760,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\LiteraryMaze.q0rpx088zi.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9mk6ONYXvmvXb4PmVgm0ujfASC0AOV8qnInjUILYnG8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229mk6ONYXvmvXb4PmVgm0ujfASC0AOV8qnInjUILYnG8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 10:09:51 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229mk6ONYXvmvXb4PmVgm0ujfASC0AOV8qnInjUILYnG8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 17 May 2025 13:45:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LiteraryMaze/LiteraryMaze.q0rpx088zi.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\LiteraryMaze.q0rpx088zi.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q0rpx088zi"},{"Name":"integrity","Value":"sha256-9mk6ONYXvmvXb4PmVgm0ujfASC0AOV8qnInjUILYnG8="},{"Name":"label","Value":"_content/LiteraryMaze/LiteraryMaze.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229mk6ONYXvmvXb4PmVgm0ujfASC0AOV8qnInjUILYnG8=\u0022"},{"Name":"Last-Modified","Value":"Mon, 17 Mar 2025 10:09:51 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1130"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229mk6ONYXvmvXb4PmVgm0ujfASC0AOV8qnInjUILYnG8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 17 May 2025 13:45:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LiteraryMaze/Photos/aboutUs1.0n932t8ps3.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Photos\aboutUs1.jpg'))</AssetFile>

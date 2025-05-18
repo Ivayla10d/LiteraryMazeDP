@@ -1,4 +1,4 @@
-﻿@model IEnumerable<LiteraryMaze.Data.Book>
+﻿@* @model IEnumerable<LiteraryMaze.Data.Book>
 
 @{
 	ViewData["Title"] = "Index";
@@ -41,3 +41,124 @@
 	
 </div>
 
+ *@
+@model IEnumerable<LiteraryMaze.Data.Book>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #fdfbfb, #ebedee);
+        margin: 0;
+        padding: 0;
+    }
+
+    .create-book-button {
+        text-align: right;
+        margin: 20px 50px 10px 0;
+    }
+
+    .btn-create {
+        background-color: #4b0082;
+        color: #fff;
+        padding: 10px 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-create:hover {
+            background-color: #5e2b91;
+        }
+
+    .book-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 25px;
+        padding: 30px 50px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .book-card {
+        background-color: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .book-card img {
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+    .book-title {
+        color: #333;
+        margin: 10px 0 5px;
+    }
+
+    .book-author, .book-publisher, .book-price {
+        margin: 4px 0;
+        color: #555;
+    }
+
+    .book-publisher {
+        color: #888;
+    }
+
+    .book-actions a {
+        display: inline-block;
+        margin: 6px 8px 0;
+        font-size: 14px;
+        color: #4b0082;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .book-actions a:hover {
+            color: #6f42c1;
+            text-decoration: underline;
+        }
+</style>
+
+@if (User.IsInRole("Admin"))
+{
+    <p class="create-book-button">
+        <a asp-action="Create" class="btn-create">Добави нова книга</a>
+    </p>
+}
+
+<div class="book-grid">
+    @foreach (var item in Model)
+    {
+        <div class="book-card">
+            <a asp-action="Details" asp-route-id="@item.Id">
+                <img src="@Html.DisplayFor(modelItem => item.ImageURL)" width="200" height="300" />
+            </a>
+            <h4 class="book-title">@Html.DisplayFor(modelItem => item.Name)</h4>
+            <h6 class="book-author">@Html.DisplayFor(modelItem => item.Authors.Name)</h6>
+            <h6 class="book-publisher">@Html.DisplayFor(modelItem => item.Publishers.Name)</h6>
+            <h6 class="book-price">@Html.DisplayFor(modelItem => item.Price) лв.</h6>
+
+            @if (User.IsInRole("Admin"))
+            {
+                <div class="book-actions">
+                    <a asp-action="Edit" asp-route-id="@item.Id">Редактирай</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+                </div>
+            }
+        </div>
+    }
+</div>

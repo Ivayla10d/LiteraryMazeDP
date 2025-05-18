@@ -1,48 +1,116 @@
 ﻿@model LiteraryMaze.Data.Publisher
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Създай Издателство";
 }
 
-<h1>Create</h1>
+<style>
+    .publisher-create-container {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f9;
+        margin: 0;
+        padding: 0;
+    }
 
-<h4>Publisher</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+    .publisher-create-title {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+    }
+
+    .publisher-form-wrapper {
+        background: #ffffff;
+        padding: 30px;
+        margin: 30px auto;
+        border-radius: 10px;
+        max-width: 700px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .publisher-form-group {
+        margin-bottom: 20px;
+    }
+
+    .publisher-label {
+        display: block;
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .publisher-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+
+    .publisher-submit-btn {
+        background-color: #e6ccff;
+        color: #4b0082;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .publisher-submit-btn:hover {
+            background-color: #d9b3ff;
+        }
+
+    .publisher-back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #4b0082;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .publisher-back-link:hover {
+            color: #6f42c1;
+        }
+</style>
+
+<div class="publisher-create-container">
+    <h1 class="publisher-create-title">Създай ново издателство</h1>
+
+    <div class="publisher-form-wrapper">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+
+            <div class="publisher-form-group">
+                <label asp-for="Name" class="publisher-label">Име</label>
+                <input asp-for="Name" class="publisher-input" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Informacion" class="control-label"></label>
-                <input asp-for="Informacion" class="form-control" />
+
+            <div class="publisher-form-group">
+                <label asp-for="Informacion" class="publisher-label">Информация</label>
+                <input asp-for="Informacion" class="publisher-input" />
                 <span asp-validation-for="Informacion" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ImageURL" class="control-label"></label>
-                <input asp-for="ImageURL" class="form-control" />
+
+            <div class="publisher-form-group">
+                <label asp-for="ImageURL" class="publisher-label">Снимка (URL)</label>
+                <input asp-for="ImageURL" class="publisher-input" />
                 <span asp-validation-for="ImageURL" class="text-danger"></span>
             </div>
-           @*  <div class="form-group">
-                <label asp-for="DateRegister" class="control-label"></label>
-                <input asp-for="DateRegister" class="form-control" />
-                <span asp-validation-for="DateRegister" class="text-danger"></span>
-            </div> *@
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="publisher-form-group">
+                <input type="submit" value="Създай" class="publisher-submit-btn" />
             </div>
         </form>
+
+        <a asp-action="Index" class="publisher-back-link">Назад към списъка</a>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

@@ -1,48 +1,123 @@
 ﻿@model LiteraryMaze.Data.Promotion
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Детайли за Промоция";
 }
 
-<h1>Details</h1>
+<style>
+    .details-wrapper {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f9;
+        padding: 20px;
+    }
 
-<div>
-    <h4>Promotion</h4>
+    .details-title {
+        text-align: center;
+        color: #333;
+        margin-top: 30px;
+    }
+
+    .details-subtitle {
+        text-align: center;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .details-box {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .details-row {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .details-label {
+        flex: 0 0 150px;
+        font-weight: bold;
+        color: #722F37;
+    }
+
+    .details-value {
+        flex: 1;
+        color: #333;
+    }
+
+    .details-back-link {
+        display: inline-block;
+        margin-top: 30px;
+        text-decoration: none;
+        background: linear-gradient(to bottom, #b0b0b0, #666);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+        .details-back-link:hover {
+            background: linear-gradient(to bottom, #a0a0a0, #555);
+        }
+
+    .details-actions {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .details-actions a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #e6ccff;
+            color: #4b0082;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+            .details-actions a:hover {
+                background-color: #d9b3ff;
+            }
+</style>
+
+<div class="details-wrapper">
+    <h1 class="details-title">Детайли</h1>
+    <h4 class="details-subtitle">Промоция</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Books)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Books.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.PromotionPercent)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PromotionPercent)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StartDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StartDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.EndDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EndDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateRegister)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateRegister)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+    <div class="details-box">
+        <div class="details-row">
+            <div class="details-label">Книга:</div>
+            <div class="details-value">@Model.Books?.Name</div>
+        </div>
+
+        <div class="details-row">
+            <div class="details-label">Процент отстъпка:</div>
+            <div class="details-value">@Model.PromotionPercent %</div>
+        </div>
+
+        <div class="details-row">
+            <div class="details-label">Начална дата:</div>
+            <div class="details-value">@Model.StartDate.ToShortDateString()</div>
+        </div>
+
+        <div class="details-row">
+            <div class="details-label">Крайна дата:</div>
+            <div class="details-value">@Model.EndDate.ToShortDateString()</div>
+        </div>
+
+        <div class="details-row">
+            <div class="details-label">Дата на създаване:</div>
+            <div class="details-value">@Model.DateRegister.ToShortDateString()</div>
+        </div>
+
+        <div class="details-actions">
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Редактирай</a>
+            <a asp-action="Index" class="details-back-link">Назад</a>
+        </div>
+    </div>
 </div>

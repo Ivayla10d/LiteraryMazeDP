@@ -1,44 +1,105 @@
 ﻿@model IEnumerable<LiteraryMaze.Data.Category>
 
-
 @{
-	ViewData["Title"] = "Index";
+	ViewData["Title"] = "Категории";
 }
 
+<style>
+	.category-index-container {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		background-color: #f4f7f9;
+		padding: 40px;
+	}
 
-<p>
-	<a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-	<thead>
-		<tr>
-			<th>
-					@Html.DisplayNameFor(model => model.Name)
-			</th>
-			<th>
-					@Html.DisplayNameFor(model => model.DateRegister)
-			</th>
-			<th></th>
-		</tr>
-	</thead>
-	<tbody>
+	.category-index-title {
+		text-align: center;
+		font-size: 2rem;
+		margin-bottom: 30px;
+		color: #333;
+	}
+
+	.create-category-btn {
+		display: inline-block;
+		background-color: #e6ccff;
+		color: #4b0082;
+		padding: 10px 20px;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: bold;
+		transition: background-color 0.3s ease;
+		margin-bottom: 20px;
+	}
+
+		.create-category-btn:hover {
+			background-color: #d9b3ff;
+		}
+
+	.category-table {
+		width: 100%;
+		border-collapse: collapse;
+		background-color: #fff;
+		border-radius: 10px;
+		overflow: hidden;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	}
+
+		.category-table th, .category-table td {
+			padding: 12px 15px;
+			text-align: left;
+			border-bottom: 1px solid #eee;
+		}
+
+		.category-table th {
+			background-color: #f0f0f0;
+			color: #555;
+		}
+
+		.category-table tr:hover {
+			background-color: #f9f9f9;
+		}
+
+	.category-actions a {
+		color: #4b0082;
+		text-decoration: none;
+		margin-right: 8px;
+		font-weight: 500;
+	}
+
+		.category-actions a:hover {
+			text-decoration: underline;
+		}
+</style>
+<br />
+<div class="category-index-container">
+	<h1 class="category-index-title">Списък с категории</h1>
+
+	<a asp-action="Create" class="create-category-btn">+ Създай нова категория</a>
+
+	<table class="category-table">
+		<thead>
+			<tr>
+				<th>Име</th>
+				<th>Дата на добавяне</th>
+				<th> </th>
+			</tr>
+		</thead>
+		<tbody>
 			@foreach (var item in Model)
 			{
-			<tr>
-				<td>
-						@Html.DisplayFor(modelItem => item.Name)
-				</td>
-				<td>
-						@Html.DisplayFor(modelItem => item.DateRegister)
-				</td>
-				<td>
-					<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-					<a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-					<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-				</td>
-			</tr>
+				<tr>
+					<td>@Html.DisplayFor(modelItem => item.Name)</td>
+					<td>@Html.DisplayFor(modelItem => item.DateRegister)</td>
+					<td class="category-actions">
+						<a asp-action="Edit" asp-route-id="@item.Id">Редактирай</a>
+						<a asp-action="Details" asp-route-id="@item.Id">Детайли</a>
+						<a asp-action="Delete" asp-route-id="@item.Id">Изтрий</a>
+					</td>
+				</tr>
 			}
-	</tbody>
-</table>
-
-
+		</tbody>
+	</table>
+</div>
+<br />
+<br />
+<br />
+<br />

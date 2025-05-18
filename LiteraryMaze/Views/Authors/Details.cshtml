@@ -4,39 +4,74 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<style>
+    .details-wrapper {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f9;
+        min-height: 100vh;
+        padding-top: 40px;
+        text-align: center;
+        
+    }
 
-<div>
-    <h4>Author</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Autobiography)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Autobiography)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageURL)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImageURL)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateRegister)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateRegister)
-        </dd>
-    </dl>
+    .details-box {
+        background: #ffffff;
+        margin: auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+    }
+
+    .author-image {
+        width: 200px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+    }
+
+    .author-autobiography {
+        font-size: 18px;
+        line-height: 1.7;
+        color: #444;
+        text-align: justify;
+    }
+
+    .details-back-link {
+        display: inline-block;
+        margin-top: 30px;
+        text-decoration: none;
+        background: linear-gradient(to bottom, #b0b0b0, #666);
+        color: white;
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+        .details-back-link:hover {
+            background: linear-gradient(to bottom, #a0a0a0, #555);
+        }
+
+    .details-title {
+        font-size: 28px;
+        color: #4b0082;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+</style>
+<br />
+<div class="details-wrapper">
+    <div class="details-box">
+        <div class="details-title">@Model.Name</div>
+
+        <img src="@Model.ImageURL" alt="Author Photo" class="author-image" />
+
+        <p class="author-autobiography">
+            @Model.Autobiography
+        </p>
+    </div>
+      <a asp-action="Index" class="details-back-link">Назад към списъка</a>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<br />

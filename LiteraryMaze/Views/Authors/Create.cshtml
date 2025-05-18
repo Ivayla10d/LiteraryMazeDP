@@ -4,45 +4,113 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    .author-create-container {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f9;
+        margin: 0;
+        padding: 0;
+    }
 
-<h4>Author</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+    .author-create-title {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+    }
+
+    .author-create-form-wrapper {
+        background: #ffffff;
+        padding: 30px;
+        margin: 30px auto;
+        border-radius: 10px;
+        max-width: 600px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .author-form-group {
+        margin-bottom: 20px;
+    }
+
+    .author-label {
+        display: block;
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .author-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+
+    .author-submit-btn {
+        background-color: #e6ccff;
+        color: #4b0082;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .author-submit-btn:hover {
+            background-color: #d9b3ff;
+        }
+
+    .author-back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #4b0082;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .author-back-link:hover {
+            color: #6f42c1;
+        }
+</style>
+
+<div class="author-create-container">
+    <h1 class="author-create-title">Създай нов автор</h1>
+
+    <div class="author-create-form-wrapper">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+
+            <div class="author-form-group">
+                <label asp-for="Name" class="author-label">Име</label>
+                <input asp-for="Name" class="author-input" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Autobiography" class="control-label"></label>
-                <input asp-for="Autobiography" class="form-control" />
+
+            <div class="author-form-group">
+                <label asp-for="Autobiography" class="author-label">Автобиография</label>
+                <input asp-for="Autobiography" class="author-input" />
                 <span asp-validation-for="Autobiography" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ImageURL" class="control-label"></label>
-                <input asp-for="ImageURL" class="form-control" />
+
+            <div class="author-form-group">
+                <label asp-for="ImageURL" class="author-label">URL на изображение</label>
+                <input asp-for="ImageURL" class="author-input" />
                 <span asp-validation-for="ImageURL" class="text-danger"></span>
             </div>
-           @*  <div class="form-group">
-                <label asp-for="DateRegister" class="control-label"></label>
-                <input asp-for="DateRegister" class="form-control" />
-                <span asp-validation-for="DateRegister" class="text-danger"></span>
-            </div> *@
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+
+            <div class="author-form-group">
+                <input type="submit" value="Създай" class="author-submit-btn" />
             </div>
         </form>
+
+        <a asp-action="Index" class="author-back-link">Назад</a>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

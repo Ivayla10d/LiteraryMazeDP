@@ -1,34 +1,47 @@
-﻿@model IEnumerable<LiteraryMaze.Data.Promotion>
+﻿
+ @model IEnumerable<LiteraryMaze.Data.Promotion>
 
 @{
 	ViewData["Title"] = "Промоции на книги";
 }
 
-<center class="page-heading">
-	<h1>Промоции на книги</h1>
-</center>
-
-<div class="admin-action-button">
-	@if (User.IsInRole("Admin"))
-	{
-		<center>
-			<div class="form-group">
-				<a asp-action="Create" class="btn btn-primary">Създай нова промоция</a>
-			</div>
-		</center>
-	}
-</div>
-
 <style>
-	.page-heading {
-		margin-top: 20px;
+	.promotions-wrapper {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		background: #f4f7f9;
+		padding: 40px 20px;
 	}
 
-	.admin-action-button {
-		margin-bottom: 20px;
+	.promotions-title {
+		text-align: center;
+		color: #333;
+		font-size: 32px;
+		margin-bottom: 30px;
 	}
 
-	.book-promotions-container {
+	.action-button-container {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.create-btn {
+		background-color: #e6ccff;
+		border: none;
+		padding: 10px 20px;
+		font-size: 16px;
+		border-radius: 8px;
+		color: #4b0082;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		text-decoration: none;
+	}
+
+		.create-btn:hover {
+			background-color: #d9b3ff;
+		}
+
+	.promotion-cards-container {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -36,44 +49,55 @@
 	}
 
 	.promotion-card {
-		border: 1px solid #ccc;
-		border-radius: 10px;
-		padding: 15px;
-		width: 317px;
-		box-shadow: 0 0 10px rgba(0,0,0,0.1);
-margin-bottom: 2%;
+		background: #ffffff;
+		padding: 20px;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		width: 300px;
+		position: relative;
 	}
 
 	.promotion-badge {
-		animation: pulse 2s infinite;
+		position: absolute;
+		top: 14px;
+		right: 3px;
+		background-color: #ff4d4d;
+		color: white;
+		padding: 2px 5px;
+		border-radius: 50px;
+		font-size: 14px;
 		font-weight: bold;
-		color: red;
-		font-size: 1.1em;
+		animation: pulse 2s infinite;
 	}
 
 	@@keyframes pulse {
 		0% {
-			box-shadow: 0 0 0 0 red;
+			box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
 		}
 
-		50% {
-			box-shadow: 0 0 0 10px transparent;
+		70% {
+			box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+		}
+
+		100% {
+			box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
 		}
 	}
 
 	.book-title {
-		font-size: 1.2em;
-		font-weight: bold;
-		display: block;
-		margin-top: 10px;
-		color: #333;
 		text-align: center;
+		font-weight: bold;
+		font-size: 1.2em;
+		color: #333;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	.book-cover img {
 		width: 100%;
 		height: auto;
 		border-radius: 8px;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 	}
 
 	.promotion-details {
@@ -83,92 +107,106 @@ margin-bottom: 2%;
 	.price-section {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
-		font-size: 1.2em;
+		font-size: 1em;
+		margin-bottom: 10px;
 	}
 
 	.price-old {
 		text-decoration: line-through;
-		color: gray;
+		color: #999;
 	}
 
 	.price-new {
-		color: red;
+		color: #d92626;
 		font-weight: bold;
 	}
 
 	.promotion-dates {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 15px;
-		font-size: 1em;
-		color: #722F37;
+		font-size: 0.9em;
+		color: #555;
 	}
 
 	.admin-buttons {
-		margin-top: 10px;
 		text-align: center;
+		margin-top: 15px;
 	}
 
 		.admin-buttons .btn {
-			margin: 0 5px;
+			margin: 5px;
+			padding: 6px 12px;
+			border-radius: 8px;
+			font-weight: 500;
+			font-size: 14px;
 		}
 
 	.label-title {
 		font-weight: bold;
-		font-family: cursive;
-		color: #722F37;
 	}
 
 	.label-value {
-		font-family: cursive;
-		color: #722F37;
+		font-style: italic;
 	}
 </style>
+<br />
+<div class="promotions-wrapper">
+	<h1 class="promotions-title">Промоции на книги</h1>
 
-<hr />
-
-<div class="book-promotions-container">
-	@foreach (var item in Model)
+	@if (User.IsInRole("Admin"))
 	{
-		<div class="promotion-card">
-			<span class="promotion-badge">-@item.PromotionPercent %</span>
-			<span class="book-title">@item.Books.Name</span>
-			<a asp-action="Details" asp-route-id="@item.Id" class="book-cover">
-				<img src="@item.Books.ImageURL" alt="Book Cover" />
-			</a>
-
-			<div class="promotion-details">
-				<div class="price-section">
-					<span class="price-old">@item.Books.Price лв.</span>
-					<span class="price-new">
-						@{
-							decimal discount = item.Books.Price * (decimal)(item.PromotionPercent / 100.0);
-							decimal newPrice = item.Books.Price - discount;
-						}
-						@Math.Round(newPrice, 2) лв.
-					</span>
-				</div>
-
-				<div class="promotion-dates">
-					<div class="promotion-start">
-						<span class="label-title">Начало:</span>
-						<span class="label-value">@item.StartDate.ToShortDateString()</span>
-					</div>
-					<div class="promotion-end">
-						<span class="label-title">Край:</span>
-						<span class="label-value">@item.EndDate.ToShortDateString()</span>
-					</div>
-				</div>
-
-				@if (User.IsInRole("Admin"))
-				{
-					<div class="admin-buttons">
-						<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Редактирай</a>
-						<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Изтрий</a>
-					</div>
-				}
-			</div>
+		<div class="action-button-container">
+			<a asp-action="Create" class="create-btn">Създай нова промоция</a>
 		</div>
 	}
+
+	<div class="promotion-cards-container">
+		@foreach (var item in Model)
+		{
+			<div class="promotion-card">
+				<div class="promotion-badge">-@item.PromotionPercent%</div>
+				<div class="book-title">@item.Books.Name</div>
+
+				<a asp-controller="Books"asp-action="Details" asp-route-id="@item.Books.Id" class="book-cover">
+					<img src="@item.Books.ImageURL" alt="Book Cover" />
+				</a>
+
+				<div class="promotion-details">
+					<div class="price-section">
+						<span class="price-old">@item.Books.Price лв.</span>
+						<span class="price-new">
+							@{
+								decimal discount = item.Books.Price * (decimal)(item.PromotionPercent / 100.0);
+								decimal newPrice = item.Books.Price - discount;
+							}
+							@Math.Round(newPrice, 2) лв.
+						</span>
+					</div>
+
+					<div class="promotion-dates">
+						<div>
+							<span class="label-title">Начало:</span>
+							<span class="label-value">@item.StartDate.ToShortDateString()</span>
+						</div>
+						<div>
+							<span class="label-title">Край:</span>
+							<span class="label-value">@item.EndDate.ToShortDateString()</span>
+						</div>
+					</div>
+
+					@if (User.IsInRole("Admin"))
+					{
+						<div class="admin-buttons">
+							<a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Редактирай</a>
+
+							<a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Детайли</a>
+
+							<a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Изтрий</a>
+						</div>
+					}
+				</div>
+			</div>
+		}
+	</div>
 </div>
+<br />

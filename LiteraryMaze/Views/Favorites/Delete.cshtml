@@ -3,49 +3,81 @@
 @{
     ViewData["Title"] = "Delete";
 }
+<style>
+    .delete-page {
+     
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+    }
 
-<h1>Delete</h1>
+        .delete-page h1 {
+            color: #d9534f;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px #a94442;
+        }
 
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>Favorite</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Users)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Users.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Books)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Books.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Quantity)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Quantity)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DateRegister)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateRegister)
-        </dd>
-    </dl>
-    
-    <form asp-action="Delete">
+        .delete-page h3 {
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .delete-page form {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            width: 400px;
+            display: inline-block;
+        }
+
+    .btn-delete {
+        background-color: #d9534f;
+        border: none;
+        color: white;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-delete:hover {
+            background-color: #c9302c;
+        }
+
+    .btn-back {
+        margin-left: 15px;
+        font-weight: 600;
+        color: #0275d8;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .btn-back:hover {
+            color: #025aa5;
+            text-decoration: underline;
+        }
+</style>
+<div class="delete-page">
+
+
+    <h3>Сигурни ли сте, че искате да премахнете книгата от Любими?</h3>
+
+    <form asp-action="Delete" method="post">
+        @Html.AntiForgeryToken()
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+
+        <input type="submit" value="Delete" class="btn-delete" /> 
+        <a asp-action="Index" class="btn-back">Отказ</a>
     </form>
 </div>

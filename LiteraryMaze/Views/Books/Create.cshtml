@@ -4,77 +4,158 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    .book-create-container {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f9;
+        margin: 0;
+        padding: 0;
+    }
 
-<h4>Book</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+    .book-create-title {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+    }
+
+    .book-create-form-wrapper {
+        background: #ffffff;
+        padding: 30px;
+        margin: 30px auto;
+        border-radius: 10px;
+        max-width: 700px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-form-group {
+        margin-bottom: 20px;
+    }
+
+    .book-label {
+        display: block;
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 5px;
+    }
+
+    .book-input,
+    .book-select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+    }
+
+    .book-submit-btn {
+        background-color: #e6ccff;
+        color: #4b0082;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .book-submit-btn:hover {
+            background-color: #d9b3ff;
+        }
+
+    .book-back-link {
+        display: inline-block;
+        margin-top: 20px;
+        color: #4b0082;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .book-back-link:hover {
+            color: #6f42c1;
+        }
+</style>
+
+<div class="book-create-container">
+    <h1 class="book-create-title">Създай нова книга</h1>
+
+    <div class="book-create-form-wrapper">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="CatNumber" class="control-label"></label>
-                <input asp-for="CatNumber" class="form-control" />
+
+            <div class="book-form-group">
+                <label asp-for="CatNumber" class="book-label">Каталожен номер</label>
+                <input asp-for="CatNumber" class="book-input" />
                 <span asp-validation-for="CatNumber" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+
+            <div class="book-form-group">
+                <label asp-for="Name" class="book-label">Заглавие</label>
+                <input asp-for="Name" class="book-input" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="AuthorId" class="control-label"></label>
-                <select asp-for="AuthorId" class ="form-control" asp-items="ViewBag.AuthorId"></select>
+
+            <div class="book-form-group">
+                <label asp-for="AuthorId" class="book-label">Автор</label>
+                <select asp-for="AuthorId" class="book-select" asp-items="ViewBag.AuthorId"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="PublisherId" class="control-label"></label>
-                <select asp-for="PublisherId" class ="form-control" asp-items="ViewBag.PublisherId"></select>
+
+            <div class="book-form-group">
+                <label asp-for="PublisherId" class="book-label">Издател</label>
+                <select asp-for="PublisherId" class="book-select" asp-items="ViewBag.PublisherId"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
-                <select asp-for="CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
+
+            <div class="book-form-group">
+                <label asp-for="CategoryId" class="book-label">Категория</label>
+                <select asp-for="CategoryId" class="book-select" asp-items="ViewBag.CategoryId"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="GenreId" class="control-label"></label>
-                <select asp-for="GenreId" class ="form-control" asp-items="ViewBag.GenreId"></select>
+
+            <div class="book-form-group">
+                <label asp-for="GenreId" class="book-label">Жанр</label>
+                <select asp-for="GenreId" class="book-select" asp-items="ViewBag.GenreId"></select>
             </div>
-            <div class="form-group">
-                <label asp-for="Plot" class="control-label"></label>
-                <input asp-for="Plot" class="form-control" />
+
+            <div class="book-form-group">
+                <label asp-for="Plot" class="book-label">Сюжет</label>
+                <input asp-for="Plot" class="book-input" />
                 <span asp-validation-for="Plot" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ImageURL" class="control-label"></label>
-                <input asp-for="ImageURL" class="form-control" />
+
+            <div class="book-form-group">
+                <label asp-for="ImageURL" class="book-label">URL на изображение</label>
+                <input asp-for="ImageURL" class="book-input" />
                 <span asp-validation-for="ImageURL" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
+
+            <div class="book-form-group">
+                <label asp-for="Price" class="book-label">Цена</label>
+                <input asp-for="Price" class="book-input" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Quantity" class="control-label"></label>
-                <input asp-for="Quantity" class="form-control" />
+
+            <div class="book-form-group">
+                <label asp-for="Quantity" class="book-label">Налично количество</label>
+                <input asp-for="Quantity" class="book-input" />
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Year" class="control-label"></label>
-                <input asp-for="Year" class="form-control" />
+
+            <div class="book-form-group">
+                <label asp-for="Year" class="book-label">Година</label>
+                <input asp-for="Year" class="book-input" />
                 <span asp-validation-for="Year" class="text-danger"></span>
             </div>
 
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="book-form-group">
+                <input type="submit" value="Създай" class="book-submit-btn" />
             </div>
         </form>
+
+        <a asp-action="Index" class="book-back-link">Назад към списъка</a>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

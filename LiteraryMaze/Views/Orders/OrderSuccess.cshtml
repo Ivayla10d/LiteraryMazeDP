@@ -3,9 +3,123 @@
     ViewData["Title"] = "OrderSuccess";
 }
 
+@{
+    ViewData["Title"] = "Order Completed";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
+<style>
+    .order-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
 
-<h1>Благодарим ви за поръчката!</h1>
-<p>Ще се свържем с вас скоро. Можете да продължите да разглеждате книги.</p>
+    .order-title {
+        font-size: 28px;
+        font-weight: bold;
+        color: #2d7a32;
+        margin-bottom: 30px;
+    }
 
-<a asp-controller="Books" asp-action="Index" class="btn btn-primary">Продължи пазаруването</a>
+    .order-message {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 40px;
+    }
+
+    .rating-section {
+        margin-top: 30px;
+    }
+
+    .rating-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .stars {
+        font-size: 30px;
+        color: #ccc;
+        cursor: pointer;
+        transition: color 0.2s;
+    }
+
+        .stars.filled {
+            color: #f5b301;
+        }
+
+    .continue-link {
+        display: inline-block;
+        margin-top: 40px;
+        padding: 10px 20px;
+        background-color: #2d7a32;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+        .continue-link:hover {
+            background-color: #256128;
+        }
+</style>
+
+<div class="order-container">
+    <div class="order-title">Поръчката Ви е завършена</div>
+
+    <div class="order-message">
+        Благодарим Ви за направената поръчка! Ние ценим Вашето доверие и ще се постараем да обработим и доставим продуктите Ви възможно най-бързо. <br><br>
+        Потвърждение на поръчката е изпратено на посочения от Вас имейл адрес. Ако имате въпроси относно поръчката, не се колебайте да се свържете с нашия екип за обслужване на клиенти.
+    </div>
+
+    <div class="rating-section">
+        <div class="rating-title">Оценете нашите услуги</div>
+        <div id="star-rating">
+            <span class="stars" data-value="1">&#9733;</span>
+            <span class="stars" data-value="2">&#9733;</span>
+            <span class="stars" data-value="3">&#9733;</span>
+            <span class="stars" data-value="4">&#9733;</span>
+            <span class="stars" data-value="5">&#9733;</span>
+        </div>
+    </div>
+
+    <a class="continue-link" asp-controller="Books" asp-action="Index">Продължи пазаруването</a>
+</div>
+
+<script>
+    const stars = document.querySelectorAll('.stars');
+    let selectedRating = 0;
+
+    function highlightStars(rating) {
+        stars.forEach(star => {
+            const starValue = parseInt(star.getAttribute('data-value'));
+            if (starValue <= rating) {
+                star.classList.add('filled');
+            } else {
+                star.classList.remove('filled');
+            }
+        });
+    }
+
+    stars.forEach(star => {
+        star.addEventListener('mouseover', () => {
+            const rating = parseInt(star.getAttribute('data-value'));
+            highlightStars(rating);
+        });
+
+        star.addEventListener('mouseout', () => {
+            highlightStars(selectedRating);
+        });
+
+        star.addEventListener('click', () => {
+            selectedRating = parseInt(star.getAttribute('data-value'));
+            highlightStars(selectedRating);
+            console.log("Rated:", selectedRating);
+            // You can send the rating to server here with fetch() or Ajax
+        });
+    });
+</script>

@@ -1,54 +1,158 @@
 ﻿@model LiteraryMaze.Data.Promotion
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Редактирай Промоция";
 }
 
-<h1>Edit</h1>
+<style>
+    .edit-page-wrapper {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7f9;
+        padding: 0;
+        margin: 0;
+    }
 
-<h4>Promotion</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="BookId" class="control-label"></label>
-                <select asp-for="BookId" class="form-control" asp-items="ViewBag.BookId"></select>
-                <span asp-validation-for="BookId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PromotionPercent" class="control-label"></label>
-                <input asp-for="PromotionPercent" class="form-control" />
-                <span asp-validation-for="PromotionPercent" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="StartDate" class="control-label"></label>
-                <input asp-for="StartDate" class="form-control" />
-                <span asp-validation-for="StartDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="EndDate" class="control-label"></label>
-                <input asp-for="EndDate" class="form-control" />
-                <span asp-validation-for="EndDate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DateRegister" class="control-label"></label>
-                <input asp-for="DateRegister" class="form-control" />
-                <span asp-validation-for="DateRegister" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+    .edit-page-title {
+        text-align: center;
+        color: #333;
+        margin-top: 30px;
+    }
+
+    .edit-page-subtitle {
+        text-align: center;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .edit-form-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .edit-form-box {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .edit-form-group {
+        margin-bottom: 20px;
+    }
+
+    .edit-label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .edit-input {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .edit-btn {
+        background-color: #e6ccff; /* light purple */
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        color: #4b0082;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .edit-btn:hover {
+            background-color: #d9b3ff;
+        }
+
+    .edit-back-link {
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+        background: linear-gradient(to bottom, #b0b0b0, #666);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+
+        .edit-back-link:hover {
+            background: linear-gradient(to bottom, #a0a0a0, #555);
+        }
+
+    .edit-validation {
+        color: #dc3545;
+        font-size: 14px;
+    }
+</style>
+
+<div class="edit-page-wrapper">
+    <h1 class="edit-page-title">Редактирай</h1>
+    <h4 class="edit-page-subtitle">Промоция</h4>
+    <hr />
+
+    <div class="edit-form-container">
+        <div class="edit-form-box">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="edit-validation"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="edit-form-group">
+                    <label asp-for="BookId" class="edit-label">Книга</label>
+                    <select asp-for="BookId" class="edit-input" asp-items="ViewBag.BookId"></select>
+                    <span asp-validation-for="BookId" class="edit-validation"></span>
+                </div>
+
+                <div class="edit-form-group">
+                    <label asp-for="PromotionPercent" class="edit-label">Процент отстъпка</label>
+                    <input asp-for="PromotionPercent" class="edit-input" />
+                    <span asp-validation-for="PromotionPercent" class="edit-validation"></span>
+                </div>
+
+                <div class="edit-form-group">
+                    <label asp-for="StartDate" class="edit-label">Начална дата</label>
+                    <input asp-for="StartDate" class="edit-input" />
+                    <span asp-validation-for="StartDate" class="edit-validation"></span>
+                </div>
+
+                <div class="edit-form-group">
+                    <label asp-for="EndDate" class="edit-label">Крайна дата</label>
+                    <input asp-for="EndDate" class="edit-input" />
+                    <span asp-validation-for="EndDate" class="edit-validation"></span>
+                </div>
+
+                <div class="edit-form-group">
+                    <label asp-for="DateRegister" class="edit-label">Дата на създаване</label>
+                    <input asp-for="DateRegister" class="edit-input" />
+                    <span asp-validation-for="DateRegister" class="edit-validation"></span>
+                </div>
+
+                <div class="edit-form-group" style="text-align: center;">
+                    <input type="submit" value="Запази промените" class="edit-btn" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div style="text-align:center;">
+        <a asp-action="Index" class="edit-back-link">Назад</a>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+<br />
+<br />
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }
